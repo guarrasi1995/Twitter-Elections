@@ -496,7 +496,11 @@ def election(start, count, queue, User):
     
     if start not in User:
         print(start)
-        s = api.get_user(id = start)
+        try:
+            s = api.get_user(id = start)
+        except:
+            print("RateLimitError")
+            time.sleep(15 * 60)
         s = process_or_store(s._json)
         json_acceptable_string = s.replace("'","/")
         d = json.loads(json_acceptable_string)
