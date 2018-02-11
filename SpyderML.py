@@ -496,11 +496,14 @@ def election(start, count, queue, User):
     
     if start not in User:
         print(start)
-        try:
-            s = api.get_user(id = start)
-        except:
-            print("RateLimitError")
-            time.sleep(15 * 60)
+        prova = True
+        while prova == True:
+            try:
+                s = api.get_user(id = start)
+                prova = False
+            except:
+                print("RateLimitError")
+                time.sleep(15 * 60)
         s = process_or_store(s._json)
         json_acceptable_string = s.replace("'","/")
         d = json.loads(json_acceptable_string)
@@ -592,17 +595,7 @@ def election(start, count, queue, User):
         return (election(start, count, queue,User))
     else:
         return (Voto_Totale)
-    '''
-        try:
-            start= api.get_user(start).screen_name
-        except tweepy.RateLimitError:
-            time.sleep(15 * 60)
-            
-        print(Voto_Totale)
-        
-        return (election(start, count, queue))
-        '''
-   
+    
 
 #Example
 User = {}       
@@ -622,13 +615,16 @@ word_dx = ["fi","forza","lega"]
 conto = 0
 togliere_dx = []
 for i in Centro_Destra:
-    boole = False
-    try:
-        screen_name = (api.get_user(i).screen_name).lower()
-    except:
-        print("I'm waiting for ", i, "conto", conto)
-        time.sleep(15 * 60)
+    prova = True
+    while prova == True:
+        try:
+            screen_name = (api.get_user(i).screen_name).lower()
+            prova = False
+        except:
+            print("I'm waiting for ", i, "conto", conto)
+            time.sleep(15 * 60)
     conto +=1
+    boole = False
     for elem in word_dx :
         if elem in screen_name :
             boole = True
@@ -651,13 +647,16 @@ par = ["pd","popolare","radical","insieme","europa","psi"]
 #Remember that lorenzin is the name of a member of this political party , then she will be removed
 togliere_sx = []
 for i in Centro_Sinistra:
-    boole = False
-    try:
-        screen_name = (api.get_user(i).screen_name).lower()
-    except:
-        print("I'm waiting for ", i , "conto", conto)
-        time.sleep(15 * 60)
+    prova = True
+    while prova == True:
+        try:
+            screen_name = (api.get_user(i).screen_name).lower()
+            prova = False
+        except:
+            print("I'm waiting for ", i , "conto", conto)
+            time.sleep(15 * 60)
     conto +=1
+    boole = False
     for elem in par :
         if elem in screen_name :
                 boole = True
