@@ -14,11 +14,19 @@ import json
 import time
 import operator
 
+#Davide
 cfg = {
     "consumer_key" :"RquN0zhitB82NARp79NC9xXHb",
     "consumer_secret":"77TJqc5dfBkdLso3uhx7UV5zHGPdbPUdxnlpn8KHCcINFGJAY8",
     "access_token" :"931887582190895104-OXDeNHFHHwNTkQLIojdDvzvg7jGXgAg",
     "access_token_secret" :"04why4jJLITZMAMjTS0YIsdp85dO37Kgsx7ekhp5YsElZ"}
+
+#Valerio
+cfg = {
+    "consumer_key" :"5n8QsFqTsfiaB9aqJJvGm01rn",
+    "consumer_secret":"QoKiYt9fAQkgRSeBMmFOokxBLYpmxJm4VDVLKMooWlPBnE5Jsp",
+    "access_token" :"938705179284819968-3Sv1npwRRqbH2gcFiyAqwkH3gedDJqK",
+    "access_token_secret" :"62oNP7DxrDjWW1Dhb1Ud6HYEFaDrnJnQ4mt4vJKXI9AnA"}
 
 auth =OAuthHandler(cfg["consumer_key"],cfg["consumer_secret"])
 auth.set_access_token(cfg["access_token"],cfg["access_token_secret"])
@@ -640,10 +648,9 @@ for e in togliere_dx:
 print("WE HAVE FINISHED FOR Centro Destra")
 
 ##PULIZIA CENTRO SINISTRA
-
 conto = 0
 
-par = ["pd","popolare","radical","insieme","europa","psi"]
+par = ["pd","popolare","radical","insieme","europa","psi","democratico"]
 #Remember that lorenzin is the name of a member of this political party , then she will be removed
 togliere_sx = []
 for i in Centro_Sinistra:
@@ -688,4 +695,9 @@ if 13294452 in Centro_Sinistra:
     
 if 946705126911369216 in Centro_Sinistra:
     print("i")  
+    
+if "democratico" in "Partito Democratico".lower():
+    print("yes")
+else:
+    print("No")
     
