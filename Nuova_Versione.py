@@ -39,6 +39,8 @@ client = MongoClient('localhost', 27017)
 db = client['Twitter_Prova']
 collection = db['Twitter_Davide']
 h = []
+with open("LeU.txt", "rb") as fp:   # Unpickling
+    LeU = pickle.load(fp)
 
 class listener(StreamListener):
 
@@ -57,7 +59,7 @@ class listener(StreamListener):
         print(d)
         userid = d["user"]["id"]
         
-        if userid == 938705179284819968 and "retweeted_status" not in d:
+        if userid in LeU and "retweeted_status" not in d:
             posts = db.Twitter_Renzi
             posts.insert_one(d)
             print("ok")
@@ -70,6 +72,7 @@ class listener(StreamListener):
                                "id_user": original["user"]["id_str"],
                                "screen_name": original["user"]["screen_name"],
                                "created_at": original["created_at"],
+                               "text": original["text"],
                                "favorites": [],
                                "retweets": [],
                                "last_check": time.time(),
@@ -90,7 +93,7 @@ auth.set_access_token(atoken, asecret)
 
 twitterStream = Stream(auth, listener())
 
-twitterStream.filter(follow=["938705179284819968"])
+twitterStream.filter(follow = LeU)
 #13294452 @pdnetwork
 #931887582190895104 @Davide
 #938705179284819968 @Valerio
