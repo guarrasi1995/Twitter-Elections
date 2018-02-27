@@ -47,6 +47,51 @@ At this point we have defined a third function "trova_candidati", which allowed 
 Finally we eliminated further outliers, like "Fiorello", in the "Centro Destra" because they presented in their "screen_name" one of the words considered by us key for the party, in this case "fi".
 To save the id lists we used the "pickle" library that allows us to save/extract a file while keeping the python format used.
 
+# Streaming With Tweepy
+
+To start collecting tweets in real time from all the actors in our political lists we use Tweepy, which makes easier to use the twitter streaming api by handling authentication, connection. API authorization is required to access Twitter streams. 
+
+The Twitter streaming API is used to download twitter messages in real time. It is useful for obtaining a high volume of tweets.
+The streaming api is quite different from the REST api because the REST api is used to pull data from twitter but the streaming api pushes messages to a persistent session. This allows the streaming api to download more data in real time than could be done using the REST API.
+
+In Tweepy, an instance of tweepy.Stream establishes a streaming session and routes messages to StreamListener instance. The on_data method of a stream listener receives all messages and calls functions according to the message type. The default StreamListener can classify most common twitter messages and routes them to appropriately named methods, but these methods are only stubs.
+
+Therefore using the streaming api has three steps.
+
+A. Create a class inheriting from StreamListener
+B. Using that class create a Stream object
+C. Connect to the Twitter API using the Stream.
+
+## Step 1: Creating a StreamListener
+This simple stream listener prints status text. The on_data method of Tweepy’s StreamListener conveniently passes data from statuses to the on_status method. Create class MyStreamListener inheriting from StreamListener and overriding on_status.:
+
+import tweepy
+#override tweepy.StreamListener to add logic to on_status
+(foto del codice
+class listener(StreamListener):
+
+    def on_status(self, status):
+        print(status.text)
+)
+## Step 2: Creating a Stream
+ Once we have an api and a status listener we can create our stream object :
+
+(foto del codice
+auth = OAuthHandler(ckey, csecret)
+auth.set_access_token(atoken, asecret)
+
+twitterStream = Stream(auth, listener()) 
+)
+
+## Step 3: Starting a Stream
+A number of twitter streams are available through Tweepy. In our code we used filter to stream all tweets made by the ids on the list given as value to follow.
+
+(foto del codice twitterStream.filter(follow = LeU + M5S + Centro_Sinistra + Centro_Destra))
+
+
+
+## Handling Errors
+When using Twitter’s streaming API one must be careful of the dangers of rate limiting. If we exceed a limited number of attempts to connect to the streaming API in a window of time, we receive error 420. The amount of time a we has to wait after receiving error 420 will increase exponentially each time we make a failed attempt.
 
 # Text Analysis
 In the second point of the statistical analysis we observe the words used in the tweets.
