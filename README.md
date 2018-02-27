@@ -183,6 +183,7 @@ Every time before updating the database on MongoDB you have to check if the twee
         tweet["check"] = count + 1
         collection.save(tweet)
 
+# ![casa](https://user-images.githubusercontent.com/31849300/36751690-29e5ef36-1c01-11e8-92f3-490cc7fa3e7a.PNG)
 
 # Text Analysis
 In the second point of the statistical analysis we observe the words used in the tweets.
