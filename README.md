@@ -1,4 +1,4 @@
-# ![picture](C:/Desktop/twitter-json-examples.png)
+# ![picture](Desktop/twitter-json-examples.png)
 # Twitter-Elections
 
 The general election of Sunday 4 March 2018 is approaching, to renew the Chamber of Deputies and the Senate of the Republic. This year the Italians will go to the polls with the new electoral law, the 'Rosatellum'.
