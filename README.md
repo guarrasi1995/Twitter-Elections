@@ -183,7 +183,61 @@ Every time before updating the database on MongoDB you have to check if the twee
         tweet["check"] = count + 1
         collection.save(tweet)
 
+# Statistics
+
+## Plots
+In this part we want to exploit the collected data to make statistical analyzes on the growth of favorites and retweets over a period of 48 hours. So we decided to represent 3 types of plots:
+1. for each party the average growth of favorites and retweets
+2. given an input tweet, the growth of favorites and retweets
+3. for each party the most popular tweet based on favorites and retweets
+
+For the first type, for each party we collected favorites and retweets for every hour saving them in a dictionary with key = the relative hour and for value = the list of number of favorites or retweets at that hour. Then we made a mean of these lists and then plotted them:
+
 # ![casa](https://user-images.githubusercontent.com/31849300/36751690-29e5ef36-1c01-11e8-92f3-490cc7fa3e7a.PNG)
+4 PLOT PER MEDIA DI RETWEETS
+
+On the x axis we have the number of hours passed and on the y axis the average number of favorites reached or retweets achieved.
+We can see that.............
+
+For the second type, we ask the user to enter the ID of a desired tweet. It is searched in the database and if it is found its growth of favorites and retweets of every hour is plotted.
+
+    tweet_id = str(input("Insert a Tweet id: "))
+    for party in parties:
+        collection = db[party]
+        tweet = collection.find_one({"id_str": tweet_id})
+        if type(tweet) == dict:
+            print(tweet["text"])
+            #plot favorites
+            fig = plt.figure()
+            favorites = tweet["favorites"]
+            plt.plot(favorites)
+            plt.xticks(range(0,len(favorites)), fontsize = 7, rotation = 90)
+            plt.xlabel("Hours after first tweet")
+            plt.title(tweet["user"]["screen_name"] + " " + tweet["id_str"])
+            fig.savefig(tweet["id_str"] + "_favorites" + ".png", dpi=fig.dpi)
+            #plot retweets
+            fig = plt.figure()
+            retweets = tweet["retweets"]
+            plt.plot(retweets)
+            plt.xticks(range(0,len(retweets)), fontsize = 7, rotation = 90)
+            plt.xlabel("Hours after first tweet")
+            plt.ylabel("Retweets")
+            plt.title(tweet["user"]["screen_name"] + " " + tweet["id_str"])
+            fig.savefig(tweet["id_str"] + "_retweets" + ".png", dpi=fig.dpi)
+            break
+            
+2 PLOT SU RICHIESTA
+
+On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
+
+For the third type, we represent the same type of plot of the second type, but here we predict the tweet for each party with more favorites or with more retweets.
+
+4 PLOT POPULAR FAVORITES
+4 PLOT POPULAR RETWEETS
+
+On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
+We can see that..............
+
 
 # Text Analysis
 In the second point of the statistical analysis we observe the words used in the tweets.
