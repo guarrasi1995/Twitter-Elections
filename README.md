@@ -140,6 +140,50 @@ A number of twitter streams are available through Tweepy. In our code we used fi
 ## Errors 420
 When using Twitter’s streaming API one must be careful of the dangers of rate limiting. If we exceed a limited number of attempts to connect to the streaming API in a window of time, we receive error 420. The amount of time a we has to wait after receiving error 420 will increase exponentially each time we make a failed attempt.
 
+# Tweet Updating
+After having initialized the mongodb, while the streamer continues to collect new tweets, we run tweet_analysis.py which allows us to collect the interested data of each collected tweet. Always through the relative API we continuosly check every hour (for 48 times = up to 2 days) how many favorites and retweets the tweet has reached. Once the data is collected, we update the database by adding the relative values to the relative voices "favorites" and "retweets".
+
+For each party you enter into its collection. Subsequently, for each Count (the number of hours passed since the publication of the tweet) we collect tweets that satisfy 3 conditions: whether it is an hour after the last update ("last check"), that the check we are doing is in the 48 ("count") and that the tweet is not it has been eliminated before 48 hours ("deleted").
+    
+    while True:
+    for party in parties:
+        print(party, "-------------------------")
+        collection = db[party]
+        for count in range(min_count, max_count):
+            print("look-up", count)
+            tweet_evolution = collection.find({"last_check": {"$lte": int((time.time() - 60*60) * 1000)},
+                                               "check": count,
+                                               "deleted": False})
+
+Later, through the ID of the tweet, let's see on twitter the variations of favorites and retweets.
+However, there could be two types of errors: the tweet was deleted or Twitter blocked us. To avoid the block of the code, we resolved these exceptions in this way:
+
+     except Exception as ex:
+        print(ex)
+        if str(ex) == "[{'code': 144, 'message': 'No status found with that ID.'}]":
+            print("tweet was deleted")
+            delete = True
+            break
+        else:
+            print(ex, "sto aspettando 15 minuti perchè twitter mi ha bloccato")
+            time.sleep(15 * 60)
+                            
+Every time before updating the database on MongoDB you have to check if the tweet has been deleted or not. If you verify that the tweet has been deleted, change the key "deleted" to True.
+
+    if not delete:
+        print("trovato")
+        tweet["favorites"].append(tweet_new["favorite_count"])
+        tweet["retweets"].append(tweet_new["retweet_count"])
+        tweet["last_check"] = int(time.time() * 1000)
+        tweet["check"] = count + 1
+        collection.save(tweet)
+    else:
+        tweet["deleted"] = True
+        tweet["last_check"] = int(time.time() * 1000)
+        tweet["check"] = count + 1
+        collection.save(tweet)
+
+
 # Text Analysis
 In the second point of the statistical analysis we observe the words used in the tweets.
 We have defined the normalise function, which allows us to eliminate the stopwords, to do the stemming and to normalize the words that we retrieve from the MongoDb through the query:
