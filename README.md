@@ -197,7 +197,13 @@ For the first type, for each party we collected favorites and retweets for every
 4 PLOT PER MEDIA DI RETWEETS
 
 On the x axis we have the number of hours passed and on the y axis the average number of favorites reached or retweets achieved.
-We can see that.............
+Nell' arco di tempo in cui abbiamo raccolto i tweet siamo arrivati a prendere per ogni partito:
+Centro Destra: ___ tweets
+Centro Sinistra: ___ tweets
+LeU: ___ tweets
+M5S: ___ tweets
+
+We can see that ___ è il partito che raggiunge di media il numero massimo di favorites e ___ è  è il partito che raggiunge di media il numero massimo di retweets. Si può notare che il tasso di crescita maggiore si ha tra le __ e le __ . Invece dalle ___ in poi la crescita non è più così dominante. Questo ci fa capire che un tweet viene perso nel web dopo 2 giorni o al massimo cresce in favorites e in retweets di qualche unità. Da questi grafici possiamo dedurre che il partito che riscuote più successo nel mondo i twitter è ___ .
 
 For the second type, we ask the user to enter the ID of a desired tweet. It is searched in the database and if it is found its growth of favorites and retweets of every hour is plotted.
 
@@ -225,7 +231,8 @@ For the second type, we ask the user to enter the ID of a desired tweet. It is s
             plt.title(tweet["user"]["screen_name"] + " " + tweet["id_str"])
             fig.savefig(tweet["id_str"] + "_retweets" + ".png", dpi=fig.dpi)
             break
-            
+           
+For example for the tweet with id = _________ we have:
 2 PLOT SU RICHIESTA
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
@@ -236,7 +243,7 @@ For the third type, we represent the same type of plot of the second type, but h
 4 PLOT POPULAR RETWEETS
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
-We can see that..............
+We can see that  ___ è il partito che ha il tweet che a riscosso più successo per i favorites e ___  è il partito che ha il tweet che a riscosso più successo per i retweets. Osservando però i tweet più cliccati non si può dedurre nulla di concreto anche se (oppure visto che) prima  ___  era il partito che di media avrebbe vinto le elezioni. 
 
 
 # Text Analysis
@@ -277,3 +284,11 @@ In the first type of wordcloud we use all the words in the tweets of a party to 
 In the last plot we decided to recreate the wordcloud, personalizing it for each party, filling the acronym of the strongest component for each coalition. We identified Centro Destra as "FI", Centro Sinistra as "PD", Movimento 5 Stelle as "M5S" and Liberi e Uguali as "Leu".
 
 # ![leuu](https://user-images.githubusercontent.com/31849300/36739735-f5240140-1be0-11e8-8f14-d6ab2709027d.PNG)
+
+# Coclusions
+Combining the plots and the wordclouds we can deduce that:
+- Centro Sinistra:
+- Centro Destra:
+- LeU: 
+- M5S:
+
