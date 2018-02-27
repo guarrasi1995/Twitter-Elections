@@ -46,3 +46,26 @@ In fact, by consulting the site "http://www.ilgiornale.it/news/politica/elezioni
 At this point we have defined a third function "trova_candidati", which allowed us to join the list of employees on political pages with profiles of political exponents.
 Finally we eliminated further outliers, like "Fiorello", in the "Centro Destra" because they presented in their "screen_name" one of the words considered by us key for the party, in this case "fi".
 To save the id lists we used the "pickle" library that allows us to save/extract a file while keeping the python format used.
+
+
+# Text Analysis
+In the second point of the statistical analysis we observe the words used in the tweets.
+We have defined the normalise function, which allows us to eliminate the stopwords, to do the stemming and to normalize the words that we retrieve from the MongoDb through the query:
+
+"tweet_evolution = collection.find ()
+    #print (tweet_evolution)
+    for tweet in tweet_evolution:
+        #print (tweet)
+        for elem in normalise (tweet ["text"]):
+    "foto codice
+
+At this point for each party we can create the dictionary in which we identify the words used most frequently. 
+Once you get the dictionary "Most_used" we can draw three types of graph:
+
+#### Histogram
+When plotting the histogram, we look at the first 20 most used words, highlighting the most present word in green.
+
+#### WordCloud
+In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring
+#### WordCloud with shape
+In the last plot we decided to recreate the wordcloud, personalizing it for each party, filling the acronym of the strongest component for each coalition. We identified Centro Destra as "FI", Centro Sinistra as "PD", Movimento 5 Stelle as "M5S" and Liberi e Uguali as "Leu".
