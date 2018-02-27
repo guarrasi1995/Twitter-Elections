@@ -45,12 +45,15 @@ For example, the "Centro_Destra" list was created by collecting the ids of the f
     ForzaItalia= []
     for following in limit_handled(tweepy.Cursor(api.friends_ids, id= "forza_italia").items()):
         ForzaItalia.append(following)
+        
     LegaNord= []
     for following in limit_handled(tweepy.Cursor(api.friends_ids, id= "LegaSalvini").items()):
         LegaNord.append(following)
+        
     FratellidItalia= []
     for following in limit_handled(tweepy.Cursor(api.friends_ids, id="FratellidItaIia").items()):
             FratellidItalia.append(following)
+            
     NoiConItalia= []
     for following in limit_handled(tweepy.Cursor(api.friends_ids, id= "noiconitaliaudc").items()):
             NoiConItalia.append(following)
