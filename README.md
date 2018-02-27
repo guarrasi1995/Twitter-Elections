@@ -42,8 +42,10 @@ For example, the "Centro_Destra" list was created by collecting the ids of the f
 
 We used an Api key, which identifies our twitter app, and defined the "limit_handled" function to prevent "RateLimitError" errors.
 However for the individual coalitions we have noticed the presence of characters misleading as Barack Obama or pages as the "Financial Times", to avoid this problem we defined "clean_from_trash" function by identifying surely for each "id" if it is an outlier or a correct page ( ex: for "Centro Destra" we used ["fi", "forza", "lega"]). After this we decided to enrich our identity lists from the candidates of each party. 
-In fact, by consulting the site "http://www.ilgiornale.it/news/politica/elezioni-politiche-2018-ecco-tutti-i-candidati-1492269.html" we have taken the csv file related to the list of uninominal candidates for the Chamber of Deputies and for the Senate. Certainly we have not forgotten that some of the most important exponents are not candidated (ex: M5S "Beppe Grillo" and "AlessandrodiBattista").
-At this point we have defined a third function "trova_candidati", which allowed us to join the list of employees on political pages with profiles of political exponents.
+
+In fact, by consulting the site "http://www.ilgiornale.it/news/politica/elezioni-politiche-2018-ecco-tutti-i-candidati-1492269.html" we have taken the csv file related to the list of uninominal candidates for the Chamber of Deputies and for the Senate. 
+Certainly we have not forgotten that some of the most important exponents are not candidated (ex: M5S "Beppe Grillo" and "AlessandrodiBattista").At this point we have defined a third function "trova_candidati", which allowed us to join the list of employees on political pages with profiles of political exponents.
+
 Finally we eliminated further outliers, like "Fiorello", in the "Centro Destra" because they presented in their "screen_name" one of the words considered by us key for the party, in this case "fi".
 To save the id lists we used the "pickle" library that allows us to save/extract a file while keeping the python format used.
 
@@ -58,35 +60,31 @@ In Tweepy, an instance of tweepy.Stream establishes a streaming session and rout
 
 Therefore using the streaming api has three steps.
 
-A. Create a class inheriting from StreamListener
-B. Using that class create a Stream object
-C. Connect to the Twitter API using the Stream.
+1. Create a class inheriting from StreamListener
+2. Using that class create a Stream object
+3. Connect to the Twitter API using the Stream.
 
 ## Step 1: Creating a StreamListener
 This simple stream listener prints status text. The on_data method of Tweepy’s StreamListener conveniently passes data from statuses to the on_status method. Create class MyStreamListener inheriting from StreamListener and overriding on_status.:
+    
+    class listener(StreamListener):
+        def on_data(self, data):
+            data = data.replace("'", "")
+            json_acceptable_string = data.replace("'", "\"")
+            d = json.loads(json_acceptable_string)
+        return (True)
 
-import tweepy
-#override tweepy.StreamListener to add logic to on_status
-(foto del codice
-class listener(StreamListener):
-
-    def on_status(self, status):
-        print(status.text)
-)
 ## Step 2: Creating a Stream
  Once we have an api and a status listener we can create our stream object :
 
-(foto del codice
-auth = OAuthHandler(ckey, csecret)
-auth.set_access_token(atoken, asecret)
-
-twitterStream = Stream(auth, listener()) 
-)
+    auth = OAuthHandler(ckey, csecret)
+    auth.set_access_token(atoken, asecret)
+    twitterStream = Stream(auth, listener()) 
 
 ## Step 3: Starting a Stream
 A number of twitter streams are available through Tweepy. In our code we used filter to stream all tweets made by the ids on the list given as value to follow.
 
-(foto del codice twitterStream.filter(follow = LeU + M5S + Centro_Sinistra + Centro_Destra))
+    twitterStream.filter(follow = LeU + M5S + Centro_Sinistra + Centro_Destra)
 
 
 
@@ -97,27 +95,37 @@ When using Twitter’s streaming API one must be careful of the dangers of rate 
 In the second point of the statistical analysis we observe the words used in the tweets.
 We have defined the normalise function, which allows us to eliminate the stopwords, to do the stemming and to normalize the words that we retrieve from the MongoDb through the query:
 
-"tweet_evolution = collection.find ()
-    #print (tweet_evolution)
-    for tweet in tweet_evolution:
-        #print (tweet)
-        for elem in normalise (tweet ["text"]):
-    "foto codice
+    parties = ["Twitter_LeU", "Twitter_M5S", "Twitter_CentroSinistra", "Twitter_CentroDestra"]
 
-At this point for each party we can create the dictionary in which we identify the words used most frequently. 
-Once you get the dictionary "Most_used" we can draw three types of graph:
+    for party in parties:
+        collection = db[party]
+        #Create the empy dictionary about occurrences for each parties 
+        diz_occ = {}
+        tweet_evolution = collection.find ()
+            for tweet in tweet_evolution:
+                for elem in normalise(tweet ["text"]):
+                    if elem in diz_occ:
+                        diz_occ[elem] += 1
+                    else:
+                        diz_occ[elem] = 1
+                    
+        Most_used = dict(Counter(diz_occ).most_common())
+    
+At this point for each party we have created the dictionary in which we identify the words used most frequently. 
+Using "Most_used" dictionary we drew three types of graph:
 
-#### Histogram
+#### Histogram.1
 When plotting the histogram, we look at the first 20 most used words, highlighting the most present word in green.
+
 ![leu](https://user-images.githubusercontent.com/31849300/36740054-ac3921a8-1be1-11e8-9476-1f16996024a6.PNG)
 
 
-#### WordCloud
+#### WordCloud.2
 In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring.   
                                        ### WordCloud about Twitter of "Liberi e Uguali"
 # ![ler](https://user-images.githubusercontent.com/31849300/36740943-2df471b4-1be4-11e8-9cd6-595aa4c0fe18.PNG)
 
-#### WordCloud with shape
+#### WordCloud with shape.3
 In the last plot we decided to recreate the wordcloud, personalizing it for each party, filling the acronym of the strongest component for each coalition. We identified Centro Destra as "FI", Centro Sinistra as "PD", Movimento 5 Stelle as "M5S" and Liberi e Uguali as "Leu".
 
 # ![leuu](https://user-images.githubusercontent.com/31849300/36739735-f5240140-1be0-11e8-8f14-d6ab2709027d.PNG)
