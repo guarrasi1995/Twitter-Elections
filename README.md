@@ -40,23 +40,70 @@ Initially we decided to extract the people followed by the pages of the 4 major 
 For example, the "Centro_Destra" list was created by collecting the ids of the following pages:
 "forza_italia" (Forza Italia party), "LegaSalvini" (Lega party), "FratellidItaIia" (Fratelli d'Italia party), "noiconitaliaudc" (Noi con l'Italia party).
 
-We used an Api key, which identifies our twitter app, and defined the "limit_handled" function to prevent "RateLimitError" errors.
-However for the individual coalitions we have noticed the presence of characters misleading as Barack Obama or pages as the "Financial Times", to avoid this problem we defined "clean_from_trash" function by identifying surely for each "id" if it is an outlier or a correct page ( ex: for "Centro Destra" we used ["fi", "forza", "lega"]). After this we decided to enrich our identity lists from the candidates of each party. 
+    #Centro Destra
 
+    ForzaItalia= []
+    for following in limit_handled(tweepy.Cursor(api.friends_ids, id= "forza_italia").items()):
+        ForzaItalia.append(following)
+    LegaNord= []
+    for following in limit_handled(tweepy.Cursor(api.friends_ids, id= "LegaSalvini").items()):
+        LegaNord.append(following)
+    FratellidItalia= []
+    for following in limit_handled(tweepy.Cursor(api.friends_ids, id="FratellidItaIia").items()):
+            FratellidItalia.append(following)
+    NoiConItalia= []
+    for following in limit_handled(tweepy.Cursor(api.friends_ids, id= "noiconitaliaudc").items()):
+            NoiConItalia.append(following)
+
+    Centro_Destra = list(set(ForzaItalia + LegaNord + FratellidItalia + NoiConItalia   )) 
+
+
+We used an Api key, which identifies our twitter app, and defined the "limit_handled" function to prevent "RateLimitError" errors.
+
+    def limit_handled(cursor):
+        while True:
+            try:
+                yield cursor.next()
+            except tweepy.RateLimitError:
+                time.sleep(15 * 60)
+                
+However for the individual coalitions we have noticed the presence of characters misleading as Barack Obama or pages as the "Financial Times", to avoid this problem we defined "clean_from_trash" function by identifying surely for each "id" if it is an outlier or a correct page ( ex: for "Centro Destra" we used ["fi", "forza", "lega"]). 
+
+    ##PULIZIA CENTRO DESTRA
+    word_dx = ["fi","forza","lega"]
+    Centro_Destra,tolti_Centro_Destra = clean_from_trash(Centro_Destra, word_dx)
+    print("WE HAVE FINISHED FOR Centro Destra")
+
+
+After this we decided to enrich our identity lists from the candidates of each party.
 In fact, by consulting the site "http://www.ilgiornale.it/news/politica/elezioni-politiche-2018-ecco-tutti-i-candidati-1492269.html" we have taken the csv file related to the list of uninominal candidates for the Chamber of Deputies and for the Senate. 
-Certainly we have not forgotten that some of the most important exponents are not candidated (ex: M5S "Beppe Grillo" and "AlessandrodiBattista").At this point we have defined a third function "trova_candidati", which allowed us to join the list of employees on political pages with profiles of political exponents.
+Certainly we have not forgotten that some of the most important exponents are not candidated (ex: M5S "Beppe Grillo" and "AlessandrodiBattista").
+At this point we have defined a third function "trova_candidati", which allowed us to join the list of employees on political pages with profiles of political exponents.
+
+    ##Find Candidates Centro_Destra
+    Centro_Destra = find_candidates(candidati_centrodestra, tolti_Centro_Destra, Centro_Destra)
+
 
 Finally we eliminated further outliers, like "Fiorello", in the "Centro Destra" because they presented in their "screen_name" one of the words considered by us key for the party, in this case "fi".
 To save the id lists we used the "pickle" library that allows us to save/extract a file while keeping the python format used.
+
+    Centro_Destra = [str(elem) for elem in Centro_Destra] 
+    with open("Centro_Destra.txt", "wb") as fp:   #Pickling
+        pickle.dump(Centro_Destra, fp)
+
 
 # Streaming With Tweepy
 
 To start collecting tweets in real time from all the actors in our political lists we use Tweepy, which makes easier to use the twitter streaming api by handling authentication, connection. API authorization is required to access Twitter streams. 
 
+    cfg = {
+    "consumer_key" :"RquN0zhitB82NARp79NC9xXHb",
+    "consumer_secret":"77TJqc5dfBkdLso3uhx7UV5zHGPdbPUdxnlpn8KHCcINFGJAY8",
+    "access_token" :"931887582190895104-OXDeNHFHHwNTkQLIojdDvzvg7jGXgAg",
+    "access_token_secret" :"04why4jJLITZMAMjTS0YIsdp85dO37Kgsx7ekhp5YsElZ"}
+
 The Twitter streaming API is used to download twitter messages in real time. It is useful for obtaining a high volume of tweets.
 The streaming api is quite different from the REST api because the REST api is used to pull data from twitter but the streaming api pushes messages to a persistent session. This allows the streaming api to download more data in real time than could be done using the REST API.
-
-In Tweepy, an instance of tweepy.Stream establishes a streaming session and routes messages to StreamListener instance. The on_data method of a stream listener receives all messages and calls functions according to the message type. The default StreamListener can classify most common twitter messages and routes them to appropriately named methods, but these methods are only stubs.
 
 Therefore using the streaming api has three steps.
 
@@ -87,8 +134,7 @@ A number of twitter streams are available through Tweepy. In our code we used fi
     twitterStream.filter(follow = LeU + M5S + Centro_Sinistra + Centro_Destra)
 
 
-
-## Handling Errors
+## Errors 420
 When using Twitter’s streaming API one must be careful of the dangers of rate limiting. If we exceed a limited number of attempts to connect to the streaming API in a window of time, we receive error 420. The amount of time a we has to wait after receiving error 420 will increase exponentially each time we make a failed attempt.
 
 # Text Analysis
