@@ -30,3 +30,19 @@ We want to collect the tweets related to each party and then perform different s
 
 ## Code
 ![cattura](https://user-images.githubusercontent.com/31849276/36729392-4c826f3e-1bc4-11e8-9303-bbb460b6dc7e.PNG)
+
+
+# Extract data
+## First Part
+
+Initially we decided to extract the people followed by the pages of the 4 major coalitions.
+
+For example, the "Centro_Destra" list was created by collecting the ids of the following pages:
+"forza_italia" (Forza Italia party), "LegaSalvini" (Lega party), "FratellidItaIia" (Fratelli d'Italia party), "noiconitaliaudc" (Noi con l'Italia party).
+
+We used an Api key, which identifies our twitter app, and defined the "limit_handled" function to prevent "RateLimitError" errors.
+However for the individual coalitions we have noticed the presence of characters misleading as Barack Obama or pages as the "Financial Times", to avoid this problem we defined "clean_from_trash" function by identifying surely for each "id" if it is an outlier or a correct page ( ex: for "Centro Destra" we used ["fi", "forza", "lega"]). After this we decided to enrich our identity lists from the candidates of each party. 
+In fact, by consulting the site "http://www.ilgiornale.it/news/politica/elezioni-politiche-2018-ecco-tutti-i-candidati-1492269.html" we have taken the csv file related to the list of uninominal candidates for the Chamber of Deputies and for the Senate. Certainly we have not forgotten that some of the most important exponents are not candidated (ex: M5S "Beppe Grillo" and "AlessandrodiBattista").
+At this point we have defined a third function "trova_candidati", which allowed us to join the list of employees on political pages with profiles of political exponents.
+Finally we eliminated further outliers, like "Fiorello", in the "Centro Destra" because they presented in their "screen_name" one of the words considered by us key for the party, in this case "fi".
+To save the id lists we used the "pickle" library that allows us to save/extract a file while keeping the python format used.
