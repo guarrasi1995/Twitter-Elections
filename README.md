@@ -28,3 +28,5 @@ We want to collect the tweets related to each party and then perform different s
 2. Most Used Words
 3. Ratio between point 1 and 2 :question: :question: :question:
 
+## Code
+![cattura](https://user-images.githubusercontent.com/31849276/36729392-4c826f3e-1bc4-11e8-9303-bbb460b6dc7e.PNG)
