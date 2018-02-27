@@ -113,7 +113,9 @@ When plotting the histogram, we look at the first 20 most used words, highlighti
 #### WordCloud
 In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring
 
-![cattura](file:///C:/Users/user/Desktop/Twitter-Elections/First_PLOT_Twitter_LeU.png)
+![first_plot_twitter_leu](https://user-images.githubusercontent.com/31849300/36739577-9068d8ca-1be0-11e8-9bfe-6e0cede6dc1c.png)
 
 #### WordCloud with shape
 In the last plot we decided to recreate the wordcloud, personalizing it for each party, filling the acronym of the strongest component for each coalition. We identified Centro Destra as "FI", Centro Sinistra as "PD", Movimento 5 Stelle as "M5S" and Liberi e Uguali as "Leu".
+
+#![leuu](https://user-images.githubusercontent.com/31849300/36739735-f5240140-1be0-11e8-8f14-d6ab2709027d.PNG)
