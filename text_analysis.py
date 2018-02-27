@@ -98,7 +98,7 @@ for party in parties:
     print('\nWordCloud of the most common words used in ',party)
     plt.figure(figsize = (8,10),facecolor='k')
     wordcloud = WordCloud(background_color = 'black', mode = 'RGB', width = 1000, height = 800).generate(l)
-    plt.title('Wordcloud of the most common words in the cluster')
+    plt.title('Number of occurrences for the most used words by ' + party)   
     plt.imshow(wordcloud, interpolation="bilinear")
     plt.axis("off")
     plt.tight_layout(pad=0)
