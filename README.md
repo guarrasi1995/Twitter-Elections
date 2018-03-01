@@ -186,10 +186,11 @@ Every time before updating the database on MongoDB you have to check if the twee
 # Statistics
 
 From the data collection, the number of reference profiles for each party are:
-PIECHART
+# ![primo](https://user-images.githubusercontent.com/31849300/36874521-87c2e206-1dac-11e8-8cdc-d4f135029b2a.PNG)
+
 As we can see, Centro Sinistra and Centro Destra, being the largest parties, have a total of __ % of the pages considered.
 In the ___ days before the elections we have collected a total of ___ tweets. Here we can see how they are distributed among the various parties:
-PIECHART
+# ![secondo](https://user-images.githubusercontent.com/31849300/36874538-96c96946-1dac-11e8-8790-619fccd9a46a.PNG)
 We can see that the party that is most active on the social network is ___ , although it is not the one with the largest number of reference profiles.
 
 ## Plots
@@ -202,9 +203,8 @@ In this part we want to exploit the collected data to make statistical analyzes 
 
 For the first type, for each party we collected favorites and retweets for every hour saving them in a dictionary with key = the relative hour and for value = the list of number of favorites or retweets at that hour. Then we made a mean of these lists and then plotted them:
 
-# ![casa](https://user-images.githubusercontent.com/31849300/36751690-29e5ef36-1c01-11e8-92f3-490cc7fa3e7a.PNG)
-4 PLOT PER MEDIA DI RETWEETS
-
+# ![terzo](https://user-images.githubusercontent.com/31849300/36874560-a8f834e4-1dac-11e8-81e6-2f84006e45ab.PNG)
+# ![quarto](https://user-images.githubusercontent.com/31849300/36874561-a9188abe-1dac-11e8-9435-15c7b994a785.PNG)
 On the x axis we have the number of hours passed and on the y axis the average number of favorites reached or retweets achieved.
 
 We can see that ___ is the party that reaches the average maximum number of favorites and ___ is the party that reaches the maximum average number of retweets. It can be noted that the highest growth rate is between __ and __ . Instead from ___ onwards, growth is no longer so dominant. This makes us understand that a tweet is lost in the web after 2 days or at most grows in favorites and retweets of some units. From these graphs we can deduce that the party that collects the most success in the Twitter world is ___.
@@ -237,14 +237,15 @@ For the second type, we ask the user to enter the ID of a desired tweet. It is s
             break
            
 For example for the tweet with id = _________ we have:
-2 PLOT SU RICHIESTA
+# ![quinto](https://user-images.githubusercontent.com/31849300/36874562-a93a7494-1dac-11e8-8df6-c1ee2bd8055a.PNG)
+# ![sesto](https://user-images.githubusercontent.com/31849300/36874563-a96a9fac-1dac-11e8-88d0-6aa171240dd8.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 
 For the third type, we represent the same type of plot of the second type, but here we predict the tweet for each party with more favorites or with more retweets.
 
-4 PLOT POPULAR FAVORITES
-4 PLOT POPULAR RETWEETS
+# ![settimo](https://user-images.githubusercontent.com/31849300/36874564-a98a59fa-1dac-11e8-9bde-612b79498347.PNG)
+# ![ottavo](https://user-images.githubusercontent.com/31849300/36874565-a9f03aae-1dac-11e8-9642-e8e16aae3008.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before ___ was the party that media would have won the election. 
