@@ -297,14 +297,22 @@ When plotting the histogram, we look at the first 20 most used words, highlighti
 ![d1](https://user-images.githubusercontent.com/31849276/36913003-da89190a-1e48-11e8-995f-4c8aa65de3c2.PNG)
 
 #### WordCloud.2
-In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring.   
-                                        WordCloud about Twitter of "Liberi e Uguali"
+In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring.  
+
+                                        WordCloud of "Liberi e Uguali"
+                                        
 ![l2](https://user-images.githubusercontent.com/31849276/36913008-daffc8ac-1e48-11e8-9675-d212118aa11f.PNG)
-                                        WordCloud about Twitter of "Movimento 5 Stelle"
+
+                                        WordCloud of "Movimento 5 Stelle"
+                                        
 ![m2](https://user-images.githubusercontent.com/31849276/36913016-dbc8f6dc-1e48-11e8-8d13-f226fd7aef37.PNG)
-                                        WordCloud about Twitter of "Centro Sinistra"
+
+                                        WordCloud of "Centro Sinistra"
+                                        
 ![s2](https://user-images.githubusercontent.com/31849276/36913001-da4e9b40-1e48-11e8-84e9-cf38a508897c.PNG)
-                                        WordCloud about Twitter of "Centro Destra"
+
+                                        WordCloud of "Centro Destra"
+                                        
 ![d2](https://user-images.githubusercontent.com/31849276/36913005-dab0b5a0-1e48-11e8-8852-7f4234f2b619.PNG)
 
 #### WordCloud with shape.3
