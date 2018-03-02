@@ -216,13 +216,15 @@ plt.show()
 
 # Time Plots
 # Number of tweets per Day
-days = ["24","25","26","27","28","01"]
+days = ["24","25","26","27","28","01","02"]
 bar_width = 0.35
 r = 0
 ticks = []
+partyCount = 0
 for party in parties:
     values = {}
-    
+    posticks = []
+
     collection = db[party]
     tweet_evolution = collection.find()
     for tweet in tweet_evolution:
@@ -234,25 +236,32 @@ for party in parties:
             values[day] = 1
             if r == 0:
                 ticks.append(date[0]+date[1]+date[2])
-    
+                
+    posticks = [(x + 1) * 6 * bar_width + r * bar_width for x in range(len(days))]
     value=[values[x] for x in days]
-    plt.bar(ticks, value, bar_width, color=color[r], label= partiti[r])   
+    plt.bar(posticks, value, bar_width, color=color[r], label= partiti[r])   
     r += 1
 
            
 plt.title("Number of Tweets per Day")
 plt.xlabel("Days")
 plt.ylabel("Number of Tweets")
-plt.xticks(ticks)
+
+posticks = [(x + 1) *6 * bar_width + 2 * bar_width for x in range(len(days))]
+plt.xticks(posticks, ticks, rotation = 90)
 plt.legend()
 plt.show()
 
 #for each hour how many tweets
 hours = list(range(0,24))
-bar_width = 0.35
+bar_width = 0.4
 r = 0
 
 for party in parties:
+    posticks = []
+    for hour in hours:
+        posticks.append((hour + 1) * 5 * bar_width + r * bar_width)
+
     value=[]
     values = {}
     collection = db[party]
@@ -260,6 +269,7 @@ for party in parties:
     for tweet in tweet_evolution:
         date = tweet["created_at"].split()
         hour = int(date[3].split(":")[0])
+        posticks
         if hour in values:
             values[hour] += 1
         else:
@@ -271,12 +281,17 @@ for party in parties:
         else:
             value.append(0)
     
-    plt.bar(hours, value, bar_width, color=color[r], label= partiti[r])  
-    plt.title("Number of Tweets per Hour")
-    plt.xlabel("Days")
-    plt.ylabel("Number of Tweets")
-    plt.xticks(hours)
-    plt.legend()
-    plt.show()  
+    plt.bar(posticks, value, bar_width, color=color[r], label= partiti[r])  
     r += 1
+    
 
+posticks = []
+for hour in hours:
+    posticks.append((hour + 1) * 5 * bar_width +2 * bar_width)    
+    
+plt.title("Number of Tweets per Hour")
+plt.xlabel("Hour of the Day")
+plt.ylabel("Number of Tweets")
+plt.xticks(posticks, hours)
+plt.legend()
+plt.show()  
