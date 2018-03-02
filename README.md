@@ -291,18 +291,29 @@ Using "Most_used" dictionary we drew three types of graph:
 #### Histogram.1
 When plotting the histogram, we look at the first 20 most used words, highlighting the most present word in green.
 
-![leu](https://user-images.githubusercontent.com/31849300/36740054-ac3921a8-1be1-11e8-9476-1f16996024a6.PNG)
-
+![l1](https://user-images.githubusercontent.com/31849276/36913007-dae568d6-1e48-11e8-9851-70099c7781aa.PNG)
+![m1](https://user-images.githubusercontent.com/31849276/36913015-dbaeb43e-1e48-11e8-8c65-1b85d2c49214.PNG)
+![s1](https://user-images.githubusercontent.com/31849276/36913134-3e3a4082-1e49-11e8-85ed-7a1d7e6788ff.PNG)
+![d1](https://user-images.githubusercontent.com/31849276/36913003-da89190a-1e48-11e8-995f-4c8aa65de3c2.PNG)
 
 #### WordCloud.2
 In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring.   
-                                       ### WordCloud about Twitter of "Liberi e Uguali"
-# ![ler](https://user-images.githubusercontent.com/31849300/36740943-2df471b4-1be4-11e8-9cd6-595aa4c0fe18.PNG)
+                                        WordCloud about Twitter of "Liberi e Uguali"
+![l2](https://user-images.githubusercontent.com/31849276/36913008-daffc8ac-1e48-11e8-9675-d212118aa11f.PNG)
+                                        WordCloud about Twitter of "Movimento 5 Stelle"
+![m2](https://user-images.githubusercontent.com/31849276/36913016-dbc8f6dc-1e48-11e8-8d13-f226fd7aef37.PNG)
+                                        WordCloud about Twitter of "Centro Sinistra"
+![s2](https://user-images.githubusercontent.com/31849276/36913001-da4e9b40-1e48-11e8-84e9-cf38a508897c.PNG)
+                                        WordCloud about Twitter of "Centro Destra"
+![d2](https://user-images.githubusercontent.com/31849276/36913005-dab0b5a0-1e48-11e8-8852-7f4234f2b619.PNG)
 
 #### WordCloud with shape.3
 In the last plot we decided to recreate the wordcloud, personalizing it for each party, filling the acronym of the strongest component for each coalition. We identified Centro Destra as "FI", Centro Sinistra as "PD", Movimento 5 Stelle as "M5S" and Liberi e Uguali as "Leu".
 
-# ![leuu](https://user-images.githubusercontent.com/31849300/36739735-f5240140-1be0-11e8-8f14-d6ab2709027d.PNG)
+![l3](https://user-images.githubusercontent.com/31849276/36913009-db19840e-1e48-11e8-93db-17cbc733ddcd.PNG)
+![m3](https://user-images.githubusercontent.com/31849276/36913000-da27d212-1e48-11e8-9905-70298f153a7f.PNG)
+![s3](https://user-images.githubusercontent.com/31849276/36913002-da6d6192-1e48-11e8-9fa3-478411b32e2a.PNG)
+![d3](https://user-images.githubusercontent.com/31849276/36913006-dacb6c10-1e48-11e8-8dbd-21cb6596a542.PNG)
 
 # Coclusions
 Combining the plots and the wordclouds we can deduce that:
