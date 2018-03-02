@@ -91,6 +91,82 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 fig.savefig("Average_retweets" + ".png", dpi=300)
 plt.show()
     
+#Cleaned Average
+r=0
+secondo = []
+
+for party in parties:
+
+    collection = db[party]
+    
+    favorites_dict = {}
+    for i in range(50):
+        favorites_dict[i] = []
+    retweets_dict = {}
+    for i in range(50):
+        retweets_dict[i] = []
+    
+    tweet_evolution = collection.find()
+    for tweet in tweet_evolution:
+        favorites = tweet["favorites"]
+        retweets = tweet["retweets"]
+        if favorites[-1] >= 5 and retweets[-1] >= 5:
+            tupla_favorites = (favorites[-1],tweet["id_str"])
+            if tupla_favorites[0] > max_favorites_party[0]:
+                max_favorites_party = tupla_favorites
+                
+            tupla_retweets = (retweets[-1],tweet["id_str"])
+            if tupla_retweets[0] > max_retweets_party[0]:
+                max_retweets_party = tupla_retweets
+            
+            for i in range(len(favorites)):
+                favorites_dict[i].append(favorites[i])
+            for i in range(len(retweets)):
+                retweets_dict[i].append(retweets[i])
+        
+    #Number of elements in each collection
+    number_tweets = collection.count()
+    #Average Favorites        
+    average_favorites_tweet = [np.mean(favorites_dict[i]) for i in range(len(favorites_dict)) if len(favorites_dict[i]) != 0]
+    if r == 0:
+        fig = plt.figure()
+    plt.plot(average_favorites_tweet,color=color[r],linewidth= 4.0, label = partiti[r])
+   
+    #Average Retweets
+    secondo.append([np.mean(retweets_dict[i]) for i in range(len(retweets_dict)) if len(retweets_dict[i]) != 0])
+    
+    #plt.plot(average_retweets_tweet)
+    r += 1
+    
+#Average Favorites      
+plt.xticks(range(0,len(average_favorites_tweet)), fontsize = 7, rotation = 90)
+plt.xlabel("Hours after first tweet")
+plt.ylabel("Average Favorites")
+plt.title("Average Growth of Cleaned Favorites ")
+ax = plt.subplot()
+ax.xaxis.get_children()[1].set_size(100)
+for label in ax.xaxis.get_ticklabels()[::2]:  
+    label.set_visible(False) 
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+fig.savefig("Average_favorites" + ".png", dpi=300)    
+plt.show()
+
+#Average Retweets
+fig = plt.figure()
+for i in range(len(secondo)):
+    plt.plot(secondo[i],color=color[i],linewidth= 4.0, label = partiti[i])
+plt.xticks(range(0,len(secondo[0])), fontsize = 7, rotation = 90)
+plt.xlabel("Hours after first tweet")
+plt.ylabel("Average Retweets")
+plt.title("Average Growth of Cleaned Retweets")
+ax = plt.subplot()
+ax.xaxis.get_children()[1].set_size(100)
+for label in ax.xaxis.get_ticklabels()[::2]:  
+    label.set_visible(False) 
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+fig.savefig("Average_retweets" + ".png", dpi=300)
+plt.show()
+
     
 #Plot a given tweet
 tweet_id = str(input("Insert a Tweet id: "))
