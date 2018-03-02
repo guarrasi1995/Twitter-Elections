@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 
+
 client = MongoClient('localhost', 27017)
 #client = MongoClient('ds245228.mlab.com',45228)
 db = client["twitter-elections"]
@@ -181,7 +182,7 @@ plt.pie(values, labels=labels, wedgeprops = { 'linewidth' : 7, 'edgecolor' : 'wh
 my_circle=plt.Circle( (0,0), 0.7, color='white')
 p=plt.gcf()
 p.gca().add_artist(my_circle)
- 
+plt.title("Number of Tweets for each Party")
 plt.show()
 
 #Number Profiles for each Party
@@ -209,8 +210,73 @@ plt.pie(values, labels=labels, wedgeprops = { 'linewidth' : 7, 'edgecolor' : 'wh
 my_circle=plt.Circle( (0,0), 0.7, color='white')
 p=plt.gcf()
 p.gca().add_artist(my_circle)
- 
+plt.title("Number of Profiles for each Party")
 plt.show()
 
 
 # Time Plots
+# Number of tweets per Day
+days = ["24","25","26","27","28","01"]
+bar_width = 0.35
+r = 0
+ticks = []
+for party in parties:
+    values = {}
+    
+    collection = db[party]
+    tweet_evolution = collection.find()
+    for tweet in tweet_evolution:
+        date = tweet["created_at"].split()
+        day = date[2]
+        if day in values:
+            values[day] += 1
+        else:
+            values[day] = 1
+            if r == 0:
+                ticks.append(date[0]+date[1]+date[2])
+    
+    value=[values[x] for x in days]
+    plt.bar(ticks, value, bar_width, color=color[r], label= partiti[r])   
+    r += 1
+
+           
+plt.title("Number of Tweets per Day")
+plt.xlabel("Days")
+plt.ylabel("Number of Tweets")
+plt.xticks(ticks)
+plt.legend()
+plt.show()
+
+#for each hour how many tweets
+hours = list(range(0,24))
+bar_width = 0.35
+r = 0
+
+for party in parties:
+    value=[]
+    values = {}
+    collection = db[party]
+    tweet_evolution = collection.find()
+    for tweet in tweet_evolution:
+        date = tweet["created_at"].split()
+        hour = int(date[3].split(":")[0])
+        if hour in values:
+            values[hour] += 1
+        else:
+            values[hour] = 1
+    
+    for x in hours:
+        if x in values:
+            value.append(values[x])
+        else:
+            value.append(0)
+    
+    plt.bar(hours, value, bar_width, color=color[r], label= partiti[r])  
+    plt.title("Number of Tweets per Hour")
+    plt.xlabel("Days")
+    plt.ylabel("Number of Tweets")
+    plt.xticks(hours)
+    plt.legend()
+    plt.show()  
+    r += 1
+
