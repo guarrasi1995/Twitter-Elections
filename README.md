@@ -248,7 +248,7 @@ For the third type, we represent the same type of plot of the second type, but h
 # ![ottavo](https://user-images.githubusercontent.com/31849300/36874565-a9f03aae-1dac-11e8-9642-e8e16aae3008.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
-We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before ___ was the party that media would have won the election. 
+We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before ___ was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
 
 
 # Text Analysis
