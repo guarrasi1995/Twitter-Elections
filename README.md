@@ -250,6 +250,20 @@ For the third type, we represent the same type of plot of the second type, but h
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before ___ was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
 
+For the fourth type, we wanted to show how many tweets each party got published every day. We would like to see if the parties followed the same strategy on the amount of tweets to be published in the days around the elections.
+
+# ![1](https://user-images.githubusercontent.com/31849276/36911886-3e8c9eda-1e45-11e8-91de-03268389f53e.PNG)
+
+On the x axis we have the days in which the tweets were pubblished and on the y axis the number of tweets published.
+We can see that...
+
+For the fifth type, we wanted to see if there was a particular pattern in posting tweets from parties in particular hours. Here we can see for every hour of the day how many tweets in total have been posted by each party.
+
+# ![2](https://user-images.githubusercontent.com/31849276/36912133-18386e84-1e46-11e8-87ed-c50d4de1d8bf.PNG)
+
+On the x axis we have the hours of the day in which the tweets were pubblished and on the y axis the number of tweets published from each party.
+We can see that the most of the tweets are published from 10 a.m. up to 8 p.m.
+It would be interesting to see if the success of a tweet depends on which hour of the day it was posted or even on the day it was posted on.
 
 # Text Analysis
 In the second point of the statistical analysis we observe the words used in the tweets.
