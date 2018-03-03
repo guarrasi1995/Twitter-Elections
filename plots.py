@@ -111,13 +111,6 @@ for party in parties:
         favorites = tweet["favorites"]
         retweets = tweet["retweets"]
         if favorites[-1] >= 5 and retweets[-1] >= 5:
-            tupla_favorites = (favorites[-1],tweet["id_str"])
-            if tupla_favorites[0] > max_favorites_party[0]:
-                max_favorites_party = tupla_favorites
-                
-            tupla_retweets = (retweets[-1],tweet["id_str"])
-            if tupla_retweets[0] > max_retweets_party[0]:
-                max_retweets_party = tupla_retweets
             
             for i in range(len(favorites)):
                 favorites_dict[i].append(favorites[i])
@@ -371,3 +364,89 @@ plt.ylabel("Number of Tweets")
 plt.xticks(posticks, hours)
 plt.legend()
 plt.show()  
+
+##Extract Tweet according to 4 main topics :
+## - Work - Immigration - Tax - EU
+##Leaders observed
+## LeU = Pietro Grasso 1071332641, Laura Boldrini 221902171, Roberto Speranza 331005596
+## Centro_Destra = Matteo Salvini 270839361, Giorgia Meloni 130537001, Silvio Berlusconi 920277002858500096
+## M5s = Luigi Di Maio 48062712, Alessandro Di Battista 615597661, Beppe Grillo 19067940
+## Centro_Sinistra = Matteo Renzi 18762875, Paolo Gentiloni 406869976, CarloCalenda 2416067982
+secondo = []
+leader_observed = [[1071332641,221902171,331005596],[48062712,615597661,19067940],[18762875,406869976,2416067982],[270839361,130537001,920277002858500096]]
+topics = ["lavoro","paese","italiani","eur","futuro","scuol"]
+
+for word in topics:
+    max_favorites = {}
+    max_retweets = {}
+    r=0
+    for party in parties:
+        
+        max_favorites_party = (0,0)
+        max_retweets_party = (0,0)
+        collection = db[party]
+            
+        for elem in leader_observed[r]:
+            tweet_evolution = collection.find({"user.id_str" : str(elem)})
+            for tweet in tweet_evolution:
+                favorites = tweet["favorites"]
+                retweets = tweet["retweets"]
+                text = tweet["text"].lower()
+                if word in text :
+                    tupla_favorites = (favorites[-1],tweet["id_str"])
+                    if tupla_favorites[0] > max_favorites_party[0]:
+                        max_favorites_party = tupla_favorites
+                        
+                    tupla_retweets = (retweets[-1],tweet["id_str"])
+                    if tupla_retweets[0] > max_retweets_party[0]:
+                        max_retweets_party = tupla_retweets
+        
+        max_favorites[party] = max_favorites_party
+        max_retweets[party] = max_retweets_party 
+        r += 1
+    fig = plt.figure()
+    c = 0
+    for party in max_favorites:
+        tweet_id = max_favorites[party][1]
+        if tweet_id != 0:
+            collection = db[party]
+            tweet = collection.find_one({"id_str": tweet_id})
+            print(tweet["text"], "\n")
+            #plot favorites
+            favorites = tweet["favorites"]
+            plt.plot(favorites, color=color[c],linewidth= 4.0, label = tweet["user"]["screen_name"] + " " + tweet["id_str"])
+        c += 1
+    plt.xticks(range(0,len(favorites)), fontsize = 7, rotation = 90)
+    plt.xlabel("Hours after first tweet")
+    plt.ylabel("Favorites")
+    plt.title("The Favorited Tweets about "+ word)
+    ax = plt.subplot()
+    for label in ax.xaxis.get_ticklabels()[::2]:  
+        label.set_visible(False)
+    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    fig.savefig("Popular_favorites" + ".png", dpi=300)
+    plt.show()
+    
+    #Most Popular Tweets (Retweets)
+    fig = plt.figure()
+    c = 0
+    for party in max_retweets:
+        tweet_id = max_retweets[party][1]
+        if tweet_id != 0:
+            collection = db[party]
+            tweet = collection.find_one({"id_str": tweet_id})
+            print(tweet["text"], "\n")
+            #plot retweets
+            retweets = tweet["retweets"]
+            plt.plot(retweets, color=color[c],linewidth= 4.0, label = tweet["user"]["screen_name"] + " " + tweet["id_str"])
+        c += 1
+    plt.xticks(range(0,len(retweets)), fontsize = 7, rotation = 90)
+    plt.xlabel("Hours after first tweet")
+    plt.ylabel("Retweets")
+    plt.title("The Most Retweeted Tweets about " + word)
+    ax = plt.subplot()
+    for label in ax.xaxis.get_ticklabels()[::2]:  
+        label.set_visible(False)
+    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    fig.savefig("Popular_retweets" + ".png", dpi=300)
+    plt.show()
