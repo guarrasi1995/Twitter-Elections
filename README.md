@@ -360,36 +360,40 @@ For each party we have chosen as reference point the 3 major exponents:
 
 For each theme, we choose the most viral tweets, from the point of view of favorites and retweets, showing their performance over a 48 hour period.
 
-![media11](https://user-images.githubusercontent.com/31849300/36934245-ede9fe44-1ee6-11e8-9bf2-c89e8cedf547.PNG)
-![media12](https://user-images.githubusercontent.com/31849300/36934246-ee0c60f6-1ee6-11e8-9239-cc6ffcbaa0c1.PNG)
+![lavoro1](https://user-images.githubusercontent.com/31849300/36934500-f7123794-1eea-11e8-89bc-068bf40598f6.PNG)
+![lavoro2](https://user-images.githubusercontent.com/31849300/36934501-f7b0d458-1eea-11e8-8d65-f7c85235f01c.PNG)
 
-- LeU from __ : ___
-- M5S from __ : ___
-- Centro Sinistra from __ : ___
-- Centro Destra from __ : ___
-![media13](https://user-images.githubusercontent.com/31849300/36934247-ee3dc3d0-1ee6-11e8-8862-8a83936a5d88.PNG)
-![media14](https://user-images.githubusercontent.com/31849300/36934248-ee60e86a-1ee6-11e8-904e-fb543efdd312.PNG)
+- LeU from : 
+- M5S from  : 
+- Centro Sinistra from : 
+- Centro Destra from :  .
 
-- LeU from __ : ___
-- M5S from __ : ___
-- Centro Sinistra from __ : ___
-- Centro Destra from __ : ___
-
-![media15](https://user-images.githubusercontent.com/31849300/36934249-ee7f124a-1ee6-11e8-8e77-252760dd50d4.PNG)
-![media16](https://user-images.githubusercontent.com/31849300/36934250-eea7e030-1ee6-11e8-8883-e35864e923bb.PNG)
+![lavoro3](https://user-images.githubusercontent.com/31849300/36934492-f5e2988c-1eea-11e8-9704-38855d681cac.PNG)
+![lavoro4](https://user-images.githubusercontent.com/31849300/36934493-f6001da8-1eea-11e8-8e14-57d5ba9d78a0.PNG)
 
 - LeU from __ : ___
 - M5S from __ : ___
 - Centro Sinistra from __ : ___
 - Centro Destra from __ : ___
 
-![media18](https://user-images.githubusercontent.com/31849300/36934251-eec9a922-1ee6-11e8-9d97-94fd7de0fe37.PNG)
-![media19](https://user-images.githubusercontent.com/31849300/36934252-eefc0bba-1ee6-11e8-979d-215db0c32151.PNG)
+![lavoro5](https://user-images.githubusercontent.com/31849300/36934494-f61d8460-1eea-11e8-9b55-e98245868600.PNG)
+![lavoro6](https://user-images.githubusercontent.com/31849300/36934495-f63b84ce-1eea-11e8-925c-1cacf3e3dcf2.PNG)
 
 - LeU from __ : ___
 - M5S from __ : ___
 - Centro Sinistra from __ : ___
 - Centro Destra from __ : ___
+
+![lavoro7](https://user-images.githubusercontent.com/31849300/36934496-f664bc18-1eea-11e8-8dd7-27ec6262f820.PNG)
+![lavoro8](https://user-images.githubusercontent.com/31849300/36934497-f6814dce-1eea-11e8-80cd-26abd6d423d3.PNG)
+
+- LeU from __ : ___
+- M5S from __ : ___
+- Centro Sinistra from __ : ___
+- Centro Destra from __ : ___
+
+![lavoro9](https://user-images.githubusercontent.com/31849300/36934498-f6a0d310-1eea-11e8-80f2-ad96d1abb64d.PNG)
+![lavoro10](https://user-images.githubusercontent.com/31849300/36934499-f6bf723e-1eea-11e8-8ee9-8f9b0fe9d59e.PNG)
 
 To conclude, we note that all parties receive more attention (Favorites and Retweets) when they offend and criticize their rivals rather than in exposing their ideas and innovations. In general, hatred and insult are the primary tools for the dissemination of their tweets.
 
