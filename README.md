@@ -347,10 +347,7 @@ In the first type of wordcloud we use all the words in the tweets of a party to 
 #### WordCloud with shape.3
 In the last plot we decided to recreate the wordcloud, personalizing it for each party, filling the acronym of the strongest component for each coalition. We identified Centro Destra as "FI", Centro Sinistra as "PD", Movimento 5 Stelle as "M5S" and Liberi e Uguali as "Leu".
 
-![l3](https://user-images.githubusercontent.com/31849276/36913009-db19840e-1e48-11e8-93db-17cbc733ddcd.PNG)
-![m3](https://user-images.githubusercontent.com/31849276/36913000-da27d212-1e48-11e8-9905-70298f153a7f.PNG)
-![s3](https://user-images.githubusercontent.com/31849276/36913002-da6d6192-1e48-11e8-9fa3-478411b32e2a.PNG)
-![d3](https://user-images.githubusercontent.com/31849276/36913006-dacb6c10-1e48-11e8-8dbd-21cb6596a542.PNG)
+![wc](https://user-images.githubusercontent.com/31849276/36934851-0734b5fc-1ef0-11e8-859b-0f64230dc71e.PNG)
 
 # Themes Growth
 
