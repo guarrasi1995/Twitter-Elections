@@ -245,8 +245,9 @@ For the second type, we ask the user to enter the ID of a desired tweet. It is s
             break
            
 For example for the tweet with id = _________ we have:
-# ![quinto](https://user-images.githubusercontent.com/31849300/36874562-a93a7494-1dac-11e8-8df6-c1ee2bd8055a.PNG)
-# ![sesto](https://user-images.githubusercontent.com/31849300/36874563-a96a9fac-1dac-11e8-88d0-6aa171240dd8.PNG)
+
+![quinto](https://user-images.githubusercontent.com/31849300/36874562-a93a7494-1dac-11e8-8df6-c1ee2bd8055a.PNG)
+![sesto](https://user-images.githubusercontent.com/31849300/36874563-a96a9fac-1dac-11e8-88d0-6aa171240dd8.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 
@@ -307,19 +308,19 @@ When plotting the histogram, we look at the first 20 most used words, highlighti
 #### WordCloud.2
 In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring.  
 
-                                        WordCloud of "Liberi e Uguali"
+    WordCloud of "Liberi e Uguali"
                                         
 ![l2](https://user-images.githubusercontent.com/31849276/36913008-daffc8ac-1e48-11e8-9675-d212118aa11f.PNG)
 
-                                        WordCloud of "Movimento 5 Stelle"
+    WordCloud of "Movimento 5 Stelle"
                                         
 ![m2](https://user-images.githubusercontent.com/31849276/36913016-dbc8f6dc-1e48-11e8-8d13-f226fd7aef37.PNG)
 
-                                        WordCloud of "Centro Sinistra"
+    WordCloud of "Centro Sinistra"
                                         
 ![s2](https://user-images.githubusercontent.com/31849276/36913001-da4e9b40-1e48-11e8-84e9-cf38a508897c.PNG)
 
-                                        WordCloud of "Centro Destra"
+    WordCloud of "Centro Destra"
                                         
 ![d2](https://user-images.githubusercontent.com/31849276/36913005-dab0b5a0-1e48-11e8-8852-7f4234f2b619.PNG)
 
@@ -341,10 +342,10 @@ Observing the main themes, used by the various parties in their tweets, we notic
 - Immigration
 
 For each party we have chosen as reference point the 3 major exponents:
-LeU = Pietro Grasso, Laura Boldrini, Roberto Speranza 
-Centro_Destra = Matteo Salvini, Giorgia Meloni, Silvio Berlusconi 
-M5s = Luigi Di Maio, Alessandro Di Battista, Beppe Grillo 
-Centro_Sinistra = Matteo Renzi, Paolo Gentiloni, Carlo Calenda 
+- LeU = Pietro Grasso, Laura Boldrini, Roberto Speranza 
+- Centro_Destra = Matteo Salvini, Giorgia Meloni, Silvio Berlusconi 
+- M5s = Luigi Di Maio, Alessandro Di Battista, Beppe Grillo 
+- Centro_Sinistra = Matteo Renzi, Paolo Gentiloni, Carlo Calenda 
 
 For each theme, we choose the most viral tweets, from the point of view of favorites and retweets, showing their performance over a 48 hour period.
 IMMAGINE
