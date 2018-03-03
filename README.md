@@ -323,7 +323,7 @@ When plotting the histogram, we look at the first 20 most used words, highlighti
 ![l1](https://user-images.githubusercontent.com/31849276/36913007-dae568d6-1e48-11e8-9851-70099c7781aa.PNG)
 ![m1](https://user-images.githubusercontent.com/31849276/36913015-dbaeb43e-1e48-11e8-8c65-1b85d2c49214.PNG)
 ![s1](https://user-images.githubusercontent.com/31849276/36913134-3e3a4082-1e49-11e8-85ed-7a1d7e6788ff.PNG)
-![d1](https://user-images.githubusercontent.com/31849276/36913003-da89190a-1e48-11e8-995f-4c8aa65de3c2.PNG)
+![c1](https://user-images.githubusercontent.com/31849276/36934803-3a8d707a-1eef-11e8-932d-a3df2165fc8e.PNG)
 
 #### WordCloud.2
 In the first type of wordcloud we use all the words in the tweets of a party to get a general overview of the issues addressed and more recurring.  
