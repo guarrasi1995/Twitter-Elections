@@ -257,15 +257,24 @@ For the third type, we represent the same type of plot of the second type, but h
 
 # ![media5](https://user-images.githubusercontent.com/31849300/36934239-ec331d24-1ee6-11e8-93ae-adb5beb79379.PNG)
 The tweets extracted are:
-- LeU from __ : ___
-- M5S from __ : ___
-- Centro Sinistra from __ : ___
-- Centro Destra from __ : ___
+
+- LeU from Laura Boldrini : "#Salvini si sente europeista solo il 27 del mese, quando gli arriva il suo lauto stipendio da #Bruxelles @radioanchio "
+
+- M5S from Alessandro Di Battista : ".@matteosalvinimi Matteo scusami ho visto il fuori onda. Come fai a sperare che il PD prenda almeno il 22%? Cioè sp…  "
+
+- Centro Sinistra from Matteo Renzi : "I 5Stelle chiedono al PD i voti per formare il Governo🤣. Capite come sono messi? Falsificano i sondaggi come fosser…"
+
+- Centro Destra from Alfio Krancic : "I due picciotti di Palermo fermati per aver sequestrato, incaprettato e massacrato il segretario di FN, sono stati… "
+
 # ![media6](https://user-images.githubusercontent.com/31849300/36934240-ec508d96-1ee6-11e8-9a6c-82a232df87fd.PNG)
-- LeU from __ : ___
-- M5S from __ : ___
-- Centro Sinistra from __ : ___
-- Centro Destra from __ : ___
+
+- LeU from Laura Boldrini : "@matteosalvinimi @mattino5 Ci risiamo.Mi aiutate a spiegarlo con calma a Salvini? Il Presidente del Consiglio non g… "
+
+- M5S from Alessandro Di Battista : ".@matteosalvinimi Matteo scusami ho visto il fuori onda. Come fai a sperare che il PD prenda almeno il 22%? Cioè sp…  "
+
+- Centro Sinistra from Paolo Gentiloni : "#Istat Più crescita, meno deficit, più occupati, cala anche il debito pubblico. La politica dei nostri governi dà b… "
+
+- Centro Destra from Alfio Krancic : "I due picciotti di Palermo fermati per aver sequestrato, incaprettato e massacrato il segretario di FN, sono stati… https://t.co/HMdx3C2Lpv "
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
@@ -363,37 +372,51 @@ For each theme, we choose the most viral tweets, from the point of view of favor
 ![lavoro1](https://user-images.githubusercontent.com/31849300/36934500-f7123794-1eea-11e8-89bc-068bf40598f6.PNG)
 ![lavoro2](https://user-images.githubusercontent.com/31849300/36934501-f7b0d458-1eea-11e8-8d65-f7c85235f01c.PNG)
 
-- LeU from : 
-- M5S from  : 
-- Centro Sinistra from : 
-- Centro Destra from :  .
+- LeU from Pietro Grasso: "La disoccupazione è risalita all 11,1%. Lavoro, lavoro, lavoro: è il pensiero fisso di tutti gli italiani e il pens…"
+
+- Centro Sinistra from Paolo Gentiloni : "#Embraco sospende i licenziamenti. Un accordo importante per centinaia di lavoratori. Ottimo lavoro di @CarloCalenda #Mise  "
+
+- Centro Destra from Silvio Berlusconi : "Cè bisogno di un grande piano Marshall che aiuti i migranti creando opportunità di lavoro nei loro paesi di origin… "
 
 ![lavoro3](https://user-images.githubusercontent.com/31849300/36934492-f5e2988c-1eea-11e8-9704-38855d681cac.PNG)
 ![lavoro4](https://user-images.githubusercontent.com/31849300/36934493-f6001da8-1eea-11e8-8e14-57d5ba9d78a0.PNG)
 
-- LeU from __ : ___
-- M5S from __ : ___
-- Centro Sinistra from __ : ___
-- Centro Destra from __ : ___
+- LeU from Pietro Grasso :"Per @liberi_uguali scuola, università e ricerca sono centrali per il futuro del Paese. Sono felice che già più di 1…"
+
+- M5S from Alessandro Di Battista : "Ci vediamo alle 18.00 in piazza a Città di Castello! #FuturoInProgramma "
+
+- Centro Destra from Silvio Berlusconi : "Domenica 4 marzo saremo chiamati a decidere il futuro del nostro Paese. 
+Un solo giorno per votare, poche ore per f…"
 
 ![lavoro5](https://user-images.githubusercontent.com/31849300/36934494-f61d8460-1eea-11e8-9b55-e98245868600.PNG)
 ![lavoro6](https://user-images.githubusercontent.com/31849300/36934495-f63b84ce-1eea-11e8-925c-1cacf3e3dcf2.PNG)
 
-- LeU from __ : ___
-- M5S from __ : ___
-- Centro Sinistra from __ : ___
-- Centro Destra from __ : ___
+- LeU from Laura Boldrini : "#Salvini si sente europeista solo il 27 del mese, quando gli arriva il suo lauto stipendio da #Bruxelles @radioanchio "
+
+- Centro Sinistra from Matteo Renzi : "Bravo Sandro, ottimo lavoro. Essere più credibili in Europa passa da rispettare le regole che ci sono. E da cambiar…"
+
+- Centro Destra from Silvio Berlusconi : "Lattuale Presidente del Parlamento Europeo, il nostro amico @Antonio_Tajani, ha finalmente sciolto la riserva sul… "
 
 ![lavoro7](https://user-images.githubusercontent.com/31849300/36934496-f664bc18-1eea-11e8-8dd7-27ec6262f820.PNG)
 ![lavoro8](https://user-images.githubusercontent.com/31849300/36934497-f6814dce-1eea-11e8-80cd-26abd6d423d3.PNG)
 
-- LeU from __ : ___
-- M5S from __ : ___
-- Centro Sinistra from __ : ___
-- Centro Destra from __ : ___
+- LeU from Laura Boldrini : "A 25 mesi dal sequestro di #GiulioRegeni continuiamo a sostenere con forza la richiesta di tanti cittadini italiani…"
+
+- M5S from Luigi Di Maio : "Nonostante tutto cambieremo lItalia "
+
+- Centro Sinistra from Paolo Gentiloni : "Grazie a tutti i volontari che in queste ore aiutano le persone bisognose a proteggersi dal freddo @CaritasItaliana  @santegidionews"
+
+- Centro Destra from Silvio Berlusconi : "Se i Cinque Stelle prendessero il potere lItalia cadrebbe in una crisi rovinosa, fuggirebbero allestero le impres… "
+
+
+Grazie a tutti i volontari che in queste ore aiutano le persone bisognose a proteggersi dal freddo @CaritasItaliana  @santegidionews 
+
+Se i Cinque Stelle prendessero il potere lItalia cadrebbe in una crisi rovinosa, fuggirebbero allestero le impres… https://t.co/R94YcysVX1 
 
 ![lavoro9](https://user-images.githubusercontent.com/31849300/36934498-f6a0d310-1eea-11e8-80f2-ad96d1abb64d.PNG)
 ![lavoro10](https://user-images.githubusercontent.com/31849300/36934499-f6bf723e-1eea-11e8-8ee9-8f9b0fe9d59e.PNG)
+
+- Centro Destra from Silvio Berlusconi : "Gli immigrati clandestini sono arrivati perché i governi di sinistra non sono stati capaci di fermarli, non per il… " 
 
 To conclude, we note that all parties receive more attention (Favorites and Retweets) when they offend and criticize their rivals rather than in exposing their ideas and innovations. In general, hatred and insult are the primary tools for the dissemination of their tweets.
 
