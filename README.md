@@ -188,8 +188,8 @@ Every time before updating the database on MongoDB you have to check if the twee
 From the data collection, the number of reference profiles for each party are:
 # ![primo](https://user-images.githubusercontent.com/31849300/36874521-87c2e206-1dac-11e8-8cdc-d4f135029b2a.PNG)
 
-As we can see, Centro Sinistra and Centro Destra, being the largest parties, have a total of __ % of the pages considered.
-In the ___ days before the elections we have collected a total of ___ tweets. Here we can see how they are distributed among the various parties:
+As we can see, Centro Sinistra and Centro Destra, being the largest parties, have a total of 73% of the pages considered.
+In the 8 days before the elections we have collected a total of ___ tweets. Here we can see how they are distributed among the various parties:
 # ![secondo](https://user-images.githubusercontent.com/31849300/36874538-96c96946-1dac-11e8-8790-619fccd9a46a.PNG)
 We can see that the party that is most active on the social network is ___ , although it is not the one with the largest number of reference profiles.
 
@@ -205,9 +205,10 @@ For the first type, for each party we collected favorites and retweets for every
 
 ![terzo](https://user-images.githubusercontent.com/31849300/36874560-a8f834e4-1dac-11e8-81e6-2f84006e45ab.PNG)
 ![quarto](https://user-images.githubusercontent.com/31849300/36874561-a9188abe-1dac-11e8-9435-15c7b994a785.PNG)
+
 On the x axis we have the number of hours passed and on the y axis the average number of favorites reached or retweets achieved.
 
-We can see that ___ is the party that reaches the average maximum number of favorites and ___ is the party that reaches the maximum average number of retweets. It can be noted that the highest growth rate is between __ and __ . Instead from ___ onwards, growth is no longer so dominant. This makes us understand that a tweet is lost in the web after 2 days or at most grows in favorites and retweets of some units. From these graphs we can deduce that the party that collects the most success in the Twitter world is ___ .
+We can see that M5S is the party that reaches the average maximum number of favorites and also for the maximum average number of retweets. It can be noted that the highest growth rate is between 0 hours and 11 hours after the creation of the tweet. Instead from 27 hours from the creation onwards, growth is no longer so dominant. This makes us understand that a tweet is lost in the web after 2 days or at most grows in favorites and retweets of some units. From these graphs we can deduce that the party that collects the most success in the Twitter world is M5S .
 
 But these averages could be altered by tweets that have had little success on the web, especially from political profiles that have few followers. By doing a cleanup of these tweets, putting a minimum threshold of favorites and retweets equal to 5, we get the following plots:
 
@@ -244,7 +245,7 @@ For the second type, we ask the user to enter the ID of a desired tweet. It is s
             fig.savefig(tweet["id_str"] + "_retweets" + ".png", dpi=fig.dpi)
             break
            
-For example for the tweet with id = _________ we have:
+For example for the tweet with id = 968396173479481344 we have:
 
 ![quinto](https://user-images.githubusercontent.com/31849300/36874562-a93a7494-1dac-11e8-8df6-c1ee2bd8055a.PNG)
 ![sesto](https://user-images.githubusercontent.com/31849300/36874563-a96a9fac-1dac-11e8-88d0-6aa171240dd8.PNG)
@@ -257,14 +258,14 @@ For the third type, we represent the same type of plot of the second type, but h
 # ![ottavo](https://user-images.githubusercontent.com/31849300/36874565-a9f03aae-1dac-11e8-9642-e8e16aae3008.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
-We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before ___ was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
+We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
 
 For the fourth type, we wanted to show how many tweets each party got published every day. We would like to see if the parties followed the same strategy on the amount of tweets to be published in the days around the elections.
 
 # ![1](https://user-images.githubusercontent.com/31849276/36911886-3e8c9eda-1e45-11e8-91de-03268389f53e.PNG)
 
 On the x axis we have the days in which the tweets were pubblished and on the y axis the number of tweets published.
-We can see that...
+We can see that proportionally, all the parties follow the same trend for how many tweets they publish from a day to another. We can see in the days that we analysed the number of tweets increase and decrease alternatively. The 3rd of March there should be electoral silence, we can see that it was(n't) ___  respected.
 
 For the fifth type, we wanted to see if there was a particular pattern in posting tweets from parties in particular hours. Here we can see for every hour of the day how many tweets in total have been posted by each party.
 
