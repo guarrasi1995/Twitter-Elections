@@ -186,11 +186,12 @@ Every time before updating the database on MongoDB you have to check if the twee
 # Statistics
 
 From the data collection, the number of reference profiles for each party are:
-# ![primo](https://user-images.githubusercontent.com/31849300/36874521-87c2e206-1dac-11e8-8cdc-d4f135029b2a.PNG)
+
+![media8](https://user-images.githubusercontent.com/31849300/36934242-ec8a8aa0-1ee6-11e8-92d8-92c0b9f272ac.PNG)
 
 As we can see, Centro Sinistra and Centro Destra, being the largest parties, have a total of 73% of the pages considered.
 In the 8 days before the elections we have collected a total of ___ tweets. Here we can see how they are distributed among the various parties:
-# ![secondo](https://user-images.githubusercontent.com/31849300/36874538-96c96946-1dac-11e8-8790-619fccd9a46a.PNG)
+# ![media7](https://user-images.githubusercontent.com/31849300/36934241-ec6ceb58-1ee6-11e8-9c90-77f50ffaeca7.PNG)
 We can see that the party that is most active on the social network is ___ , although it is not the one with the largest number of reference profiles.
 
 ## Plots
@@ -203,8 +204,8 @@ In this part we want to exploit the collected data to make statistical analyzes 
 
 For the first type, for each party we collected favorites and retweets for every hour saving them in a dictionary with key = the relative hour and for value = the list of number of favorites or retweets at that hour. Then we made a mean of these lists and then plotted them:
 
-![terzo](https://user-images.githubusercontent.com/31849300/36874560-a8f834e4-1dac-11e8-81e6-2f84006e45ab.PNG)
-![quarto](https://user-images.githubusercontent.com/31849300/36874561-a9188abe-1dac-11e8-9435-15c7b994a785.PNG)
+![media1](https://user-images.githubusercontent.com/31849300/36934253-ef1c01a4-1ee6-11e8-95a7-06d2118a590d.PNG)
+![media2](https://user-images.githubusercontent.com/31849300/36934236-ebc51d2e-1ee6-11e8-9372-da3192647c80.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the average number of favorites reached or retweets achieved.
 
@@ -212,8 +213,8 @@ We can see that M5S is the party that reaches the average maximum number of favo
 
 But these averages could be altered by tweets that have had little success on the web, especially from political profiles that have few followers. By doing a cleanup of these tweets, putting a minimum threshold of favorites and retweets equal to 5, we get the following plots:
 
-IMMIGINE
-IMMAGINE
+![media3](https://user-images.githubusercontent.com/31849300/36934237-ebe438c6-1ee6-11e8-9a13-95a5918818e6.PNG)
+![media4](https://user-images.githubusercontent.com/31849300/36934238-ec01c3be-1ee6-11e8-9048-20e9201c61e6.PNG)
 
 We can rightly see that the average trend reaches higher levels and decreases the gap from the first analysis.
 
@@ -254,22 +255,22 @@ On the x axis we have the number of hours passed and on the y axis the number of
 
 For the third type, we represent the same type of plot of the second type, but here we predict the tweet for each party with more favorites or with more retweets.
 
-# ![settimo](https://user-images.githubusercontent.com/31849300/36874564-a98a59fa-1dac-11e8-9bde-612b79498347.PNG)
-# ![ottavo](https://user-images.githubusercontent.com/31849300/36874565-a9f03aae-1dac-11e8-9642-e8e16aae3008.PNG)
+# ![media5](https://user-images.githubusercontent.com/31849300/36934239-ec331d24-1ee6-11e8-93ae-adb5beb79379.PNG)
+# ![media6](https://user-images.githubusercontent.com/31849300/36934240-ec508d96-1ee6-11e8-9a6c-82a232df87fd.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
 
 For the fourth type, we wanted to show how many tweets each party got published every day. We would like to see if the parties followed the same strategy on the amount of tweets to be published in the days around the elections.
 
-# ![1](https://user-images.githubusercontent.com/31849276/36911886-3e8c9eda-1e45-11e8-91de-03268389f53e.PNG)
+# ![media9](https://user-images.githubusercontent.com/31849300/36934243-ed98367c-1ee6-11e8-8541-e741d298af55.PNG)
 
 On the x axis we have the days in which the tweets were pubblished and on the y axis the number of tweets published.
 We can see that proportionally, all the parties follow the same trend for how many tweets they publish from a day to another. We can see in the days that we analysed the number of tweets increase and decrease alternatively. The 3rd of March there should be electoral silence, we can see that it was(n't) ___  respected.
 
 For the fifth type, we wanted to see if there was a particular pattern in posting tweets from parties in particular hours. Here we can see for every hour of the day how many tweets in total have been posted by each party.
 
-# ![2](https://user-images.githubusercontent.com/31849276/36912133-18386e84-1e46-11e8-87ed-c50d4de1d8bf.PNG)
+# ![media10](https://user-images.githubusercontent.com/31849300/36934244-edb6e676-1ee6-11e8-9b7c-65a76d6fcc16.PNG)
 
 On the x axis we have the hours of the day in which the tweets were pubblished and on the y axis the number of tweets published from each party.
 We can see that the most of the tweets are published from 10 a.m. up to 8 p.m.
@@ -349,16 +350,15 @@ For each party we have chosen as reference point the 3 major exponents:
 - Centro_Sinistra = Matteo Renzi, Paolo Gentiloni, Carlo Calenda 
 
 For each theme, we choose the most viral tweets, from the point of view of favorites and retweets, showing their performance over a 48 hour period.
-IMMAGINE
-IMMAGINE
-IMMAGINE
-IMMAGINE
-IMMAGINE
-IMMAGINE
-IMMAGINE
-IMMAGINE
-IMMAGINE
-IMMAGINE
+
+![media11](https://user-images.githubusercontent.com/31849300/36934245-ede9fe44-1ee6-11e8-9bf2-c89e8cedf547.PNG)
+![media12](https://user-images.githubusercontent.com/31849300/36934246-ee0c60f6-1ee6-11e8-9239-cc6ffcbaa0c1.PNG)
+![media13](https://user-images.githubusercontent.com/31849300/36934247-ee3dc3d0-1ee6-11e8-8862-8a83936a5d88.PNG)
+![media14](https://user-images.githubusercontent.com/31849300/36934248-ee60e86a-1ee6-11e8-904e-fb543efdd312.PNG)
+![media15](https://user-images.githubusercontent.com/31849300/36934249-ee7f124a-1ee6-11e8-8e77-252760dd50d4.PNG)
+![media16](https://user-images.githubusercontent.com/31849300/36934250-eea7e030-1ee6-11e8-8883-e35864e923bb.PNG)
+![media18](https://user-images.githubusercontent.com/31849300/36934251-eec9a922-1ee6-11e8-9d97-94fd7de0fe37.PNG)
+![media19](https://user-images.githubusercontent.com/31849300/36934252-eefc0bba-1ee6-11e8-979d-215db0c32151.PNG)
 
 To conclude, we note that all parties receive more attention (Favorites and Retweets) when they offend and criticize their rivals rather than in exposing their ideas and innovations. In general, hatred and insult are the primary tools for the dissemination of their tweets.
 
