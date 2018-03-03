@@ -374,8 +374,9 @@ plt.show()
 ## Centro_Sinistra = Matteo Renzi 18762875, Paolo Gentiloni 406869976, CarloCalenda 2416067982
 secondo = []
 leader_observed = [[1071332641,221902171,331005596],[48062712,615597661,19067940],[18762875,406869976,2416067982],[270839361,130537001,920277002858500096]]
-topics = ["lavoro","paese","italiani","eur","futuro","scuol"]
-
+topics = ["lavoro","futur","eur","ital","immigr"]
+argomenti = ["Work","Future","EUR","Italy","Immigration"]
+a = 0
 for word in topics:
     max_favorites = {}
     max_retweets = {}
@@ -419,7 +420,7 @@ for word in topics:
     plt.xticks(range(0,len(favorites)), fontsize = 7, rotation = 90)
     plt.xlabel("Hours after first tweet")
     plt.ylabel("Favorites")
-    plt.title("The Favorited Tweets about "+ word)
+    plt.title("The Favorited Tweets about "+ argomenti[a])
     ax = plt.subplot()
     for label in ax.xaxis.get_ticklabels()[::2]:  
         label.set_visible(False)
@@ -443,10 +444,11 @@ for word in topics:
     plt.xticks(range(0,len(retweets)), fontsize = 7, rotation = 90)
     plt.xlabel("Hours after first tweet")
     plt.ylabel("Retweets")
-    plt.title("The Most Retweeted Tweets about " + word)
+    plt.title("The Most Retweeted Tweets about " + argomenti[a])
     ax = plt.subplot()
     for label in ax.xaxis.get_ticklabels()[::2]:  
         label.set_visible(False)
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     fig.savefig("Popular_retweets" + ".png", dpi=300)
     plt.show()
+    a += 1
