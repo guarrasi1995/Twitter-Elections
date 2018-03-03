@@ -203,11 +203,19 @@ In this part we want to exploit the collected data to make statistical analyzes 
 
 For the first type, for each party we collected favorites and retweets for every hour saving them in a dictionary with key = the relative hour and for value = the list of number of favorites or retweets at that hour. Then we made a mean of these lists and then plotted them:
 
-# ![terzo](https://user-images.githubusercontent.com/31849300/36874560-a8f834e4-1dac-11e8-81e6-2f84006e45ab.PNG)
-# ![quarto](https://user-images.githubusercontent.com/31849300/36874561-a9188abe-1dac-11e8-9435-15c7b994a785.PNG)
+![terzo](https://user-images.githubusercontent.com/31849300/36874560-a8f834e4-1dac-11e8-81e6-2f84006e45ab.PNG)
+![quarto](https://user-images.githubusercontent.com/31849300/36874561-a9188abe-1dac-11e8-9435-15c7b994a785.PNG)
 On the x axis we have the number of hours passed and on the y axis the average number of favorites reached or retweets achieved.
 
-We can see that ___ is the party that reaches the average maximum number of favorites and ___ is the party that reaches the maximum average number of retweets. It can be noted that the highest growth rate is between __ and __ . Instead from ___ onwards, growth is no longer so dominant. This makes us understand that a tweet is lost in the web after 2 days or at most grows in favorites and retweets of some units. From these graphs we can deduce that the party that collects the most success in the Twitter world is ___.
+We can see that ___ is the party that reaches the average maximum number of favorites and ___ is the party that reaches the maximum average number of retweets. It can be noted that the highest growth rate is between __ and __ . Instead from ___ onwards, growth is no longer so dominant. This makes us understand that a tweet is lost in the web after 2 days or at most grows in favorites and retweets of some units. From these graphs we can deduce that the party that collects the most success in the Twitter world is ___ .
+
+But these averages could be altered by tweets that have had little success on the web, especially from political profiles that have few followers. By doing a cleanup of these tweets, putting a minimum threshold of favorites and retweets equal to 5, we get the following plots:
+
+IMMIGINE
+IMMAGINE
+
+We can rightly see that the average trend reaches higher levels and decreases the gap from the first analysis.
+
 
 For the second type, we ask the user to enter the ID of a desired tweet. It is searched in the database and if it is found its growth of favorites and retweets of every hour is plotted.
 
@@ -323,10 +331,35 @@ In the last plot we decided to recreate the wordcloud, personalizing it for each
 ![s3](https://user-images.githubusercontent.com/31849276/36913002-da6d6192-1e48-11e8-9fa3-478411b32e2a.PNG)
 ![d3](https://user-images.githubusercontent.com/31849276/36913006-dacb6c10-1e48-11e8-8dbd-21cb6596a542.PNG)
 
-# Coclusions
-Combining the plots and the wordclouds we can deduce that:
-- Centro Sinistra:
-- Centro Destra:
-- LeU: 
-- M5S:
+# Themes Growth
 
+Observing the main themes, used by the various parties in their tweets, we notice the growth in favorites and retweets of tweets that speak of the five hottest topics of the electoral campaign. This analysis is the combination of previous graphs with WordCloud. (Remember that the analysis is based on the last eight days of the election campaign). The chosen themes are:
+- Work
+- Future
+- EUR
+- Italy
+- Immigration
+
+For each party we have chosen as reference point the 3 major exponents:
+LeU = Pietro Grasso, Laura Boldrini, Roberto Speranza 
+Centro_Destra = Matteo Salvini, Giorgia Meloni, Silvio Berlusconi 
+M5s = Luigi Di Maio, Alessandro Di Battista, Beppe Grillo 
+Centro_Sinistra = Matteo Renzi, Paolo Gentiloni, Carlo Calenda 
+
+For each theme, we choose the most viral tweets, from the point of view of favorites and retweets, showing their performance over a 48 hour period.
+IMMAGINE
+IMMAGINE
+IMMAGINE
+IMMAGINE
+IMMAGINE
+IMMAGINE
+IMMAGINE
+IMMAGINE
+IMMAGINE
+IMMAGINE
+
+To conclude, we note that all parties receive more attention (Favorites and Retweets) when they offend and criticize their rivals rather than in exposing their ideas and innovations. In general, hatred and insult are the primary tools for the dissemination of their tweets.
+
+Twitter analysis has strengths and weaknesses. Twitter users are not representative of the wider public. Twitter users tend to be highly
+motivated, younger than average and are likely more often men when engaged in political debate. So any insights are partial. That said, Twitter can be a reflection of spontaneous, motivated behaviour. Analysing Twitter narratives helps us to see where those
+highly motivated individuals position themselves in relation to the debate.
