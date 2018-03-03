@@ -417,3 +417,5 @@ To conclude, we note that all parties receive more attention (Favorites and Retw
 Twitter analysis has strengths and weaknesses. Twitter users are not representative of the wider public. Twitter users tend to be highly
 motivated, younger than average and are likely more often men when engaged in political debate. So any insights are partial. That said, Twitter can be a reflection of spontaneous, motivated behaviour. Analysing Twitter narratives helps us to see where those
 highly motivated individuals position themselves in relation to the debate.
+
+Authours: Valerio Guarrasi and Davide Aureli
