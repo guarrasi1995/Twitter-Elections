@@ -256,7 +256,16 @@ On the x axis we have the number of hours passed and on the y axis the number of
 For the third type, we represent the same type of plot of the second type, but here we predict the tweet for each party with more favorites or with more retweets.
 
 # ![media5](https://user-images.githubusercontent.com/31849300/36934239-ec331d24-1ee6-11e8-93ae-adb5beb79379.PNG)
+The tweets extracted are:
+- LeU from __ : ___
+- M5S from __ : ___
+- Centro Sinistra from __ : ___
+- Centro Destra from __ : ___
 # ![media6](https://user-images.githubusercontent.com/31849300/36934240-ec508d96-1ee6-11e8-9a6c-82a232df87fd.PNG)
+- LeU from __ : ___
+- M5S from __ : ___
+- Centro Sinistra from __ : ___
+- Centro Destra from __ : ___
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
@@ -353,12 +362,34 @@ For each theme, we choose the most viral tweets, from the point of view of favor
 
 ![media11](https://user-images.githubusercontent.com/31849300/36934245-ede9fe44-1ee6-11e8-9bf2-c89e8cedf547.PNG)
 ![media12](https://user-images.githubusercontent.com/31849300/36934246-ee0c60f6-1ee6-11e8-9239-cc6ffcbaa0c1.PNG)
+
+- LeU from __ : ___
+- M5S from __ : ___
+- Centro Sinistra from __ : ___
+- Centro Destra from __ : ___
 ![media13](https://user-images.githubusercontent.com/31849300/36934247-ee3dc3d0-1ee6-11e8-8862-8a83936a5d88.PNG)
 ![media14](https://user-images.githubusercontent.com/31849300/36934248-ee60e86a-1ee6-11e8-904e-fb543efdd312.PNG)
+
+- LeU from __ : ___
+- M5S from __ : ___
+- Centro Sinistra from __ : ___
+- Centro Destra from __ : ___
+
 ![media15](https://user-images.githubusercontent.com/31849300/36934249-ee7f124a-1ee6-11e8-8e77-252760dd50d4.PNG)
 ![media16](https://user-images.githubusercontent.com/31849300/36934250-eea7e030-1ee6-11e8-8883-e35864e923bb.PNG)
+
+- LeU from __ : ___
+- M5S from __ : ___
+- Centro Sinistra from __ : ___
+- Centro Destra from __ : ___
+
 ![media18](https://user-images.githubusercontent.com/31849300/36934251-eec9a922-1ee6-11e8-9d97-94fd7de0fe37.PNG)
 ![media19](https://user-images.githubusercontent.com/31849300/36934252-eefc0bba-1ee6-11e8-979d-215db0c32151.PNG)
+
+- LeU from __ : ___
+- M5S from __ : ___
+- Centro Sinistra from __ : ___
+- Centro Destra from __ : ___
 
 To conclude, we note that all parties receive more attention (Favorites and Retweets) when they offend and criticize their rivals rather than in exposing their ideas and innovations. In general, hatred and insult are the primary tools for the dissemination of their tweets.
 
