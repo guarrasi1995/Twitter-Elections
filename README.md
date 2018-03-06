@@ -255,7 +255,7 @@ On the x axis we have the number of hours passed and on the y axis the number of
 
 For the third type, we represent the same type of plot of the second type, but here we predict the tweet for each party with more favorites or with more retweets.
 
-# ![media5](https://user-images.githubusercontent.com/31849300/36934239-ec331d24-1ee6-11e8-93ae-adb5beb79379.PNG)
+# ![tacci](https://user-images.githubusercontent.com/31849300/37065112-da2397ba-219f-11e8-9059-22e2e5855c51.PNG)
 The tweets extracted are:
 
 - LeU from Laura Boldrini : "#Salvini si sente europeista solo il 27 del mese, quando gli arriva il suo lauto stipendio da #Bruxelles @radioanchio "
@@ -264,10 +264,10 @@ The tweets extracted are:
 
 - Centro Sinistra from Matteo Renzi : "I 5Stelle chiedono al PD i voti per formare il Governo🤣. Capite come sono messi? Falsificano i sondaggi come fosser…"
 
-- Centro Destra from Alfio Krancic : "I due picciotti di Palermo fermati per aver sequestrato, incaprettato e massacrato il segretario di FN, sono stati… "
+- Centro Destra from Matteo Salvini : "#Renzi si è dimesso, GRAZIE Italia!Vi voglio bene Amici."
 
 # ![media6](https://user-images.githubusercontent.com/31849300/36934240-ec508d96-1ee6-11e8-9a6c-82a232df87fd.PNG)
-
+The tweets extracted are:
 - LeU from Laura Boldrini : "@matteosalvinimi @mattino5 Ci risiamo.Mi aiutate a spiegarlo con calma a Salvini? Il Presidente del Consiglio non g… "
 
 - M5S from Alessandro Di Battista : ".@matteosalvinimi Matteo scusami ho visto il fuori onda. Come fai a sperare che il PD prenda almeno il 22%? Cioè sp…  "
