@@ -274,7 +274,7 @@ The tweets extracted are:
 
 - Centro Sinistra from Paolo Gentiloni : "#Istat Più crescita, meno deficit, più occupati, cala anche il debito pubblico. La politica dei nostri governi dà b… "
 
-- Centro Destra from Alfio Krancic : "I due picciotti di Palermo fermati per aver sequestrato, incaprettato e massacrato il segretario di FN, sono stati… https://t.co/HMdx3C2Lpv "
+- Centro Destra from Alfio Krancic : "I due picciotti di Palermo fermati per aver sequestrato, incaprettato e massacrato il segretario di FN, sono stati… "
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
@@ -284,7 +284,7 @@ For the fourth type, we wanted to show how many tweets each party got published 
 # ![mettereora](https://user-images.githubusercontent.com/31849300/37061532-1afeb924-2194-11e8-9421-a72a4b4b654d.PNG)
 
 On the x axis we have the days in which the tweets were pubblished and on the y axis the number of tweets published.
-We can see that proportionally, all the parties follow the same trend for how many tweets they publish from a day to another. We can see in the days that we analysed the number of tweets increase and decrease alternatively. The 3rd of March there should be electoral silence, we can see that it was(n't) ___  respected.
+We can see that proportionally, all the parties follow the same trend for how many tweets they publish from a day to another. We can see in the days that we analysed the number of tweets increase and decrease alternatively. The 3rd of March there should be electoral silence, we can see that it was respected.
 
 For the fifth type, we wanted to see if there was a particular pattern in posting tweets from parties in particular hours. Here we can see for every hour of the day how many tweets in total have been posted by each party.
 
