@@ -363,14 +363,14 @@ For each party we have chosen as reference point the 3 major exponents:
 
 For each theme, we choose the most viral tweets, from the point of view of favorites and retweets, showing their performance over a 48 hour period.
 
-![lavoro1](https://user-images.githubusercontent.com/31849300/36934500-f7123794-1eea-11e8-89bc-068bf40598f6.PNG)
+![faiora](https://user-images.githubusercontent.com/31849300/37095913-79d50830-2217-11e8-855e-33ad65b165fc.PNG)
 ![lavoro2](https://user-images.githubusercontent.com/31849300/36934501-f7b0d458-1eea-11e8-8d65-f7c85235f01c.PNG)
 
 - LeU from Pietro Grasso: "La disoccupazione è risalita all 11,1%. Lavoro, lavoro, lavoro: è il pensiero fisso di tutti gli italiani e il pens…"
 
 - Centro Sinistra from Paolo Gentiloni : "#Embraco sospende i licenziamenti. Un accordo importante per centinaia di lavoratori. Ottimo lavoro di @CarloCalenda #Mise  "
 
-- Centro Destra from Silvio Berlusconi : "Cè bisogno di un grande piano Marshall che aiuti i migranti creando opportunità di lavoro nei loro paesi di origin… "
+- Centro Destra from Matteo Salvini : "Se tieni sul lavoro fino a 67 anni uomini e donne, come fai ad introdurre nel mondo del lavoro i giovani? Cancellare L.Fornero è azione di giustizia sociale, non è solo un pallino di Salvini. bersagliomobile "
 
 ![lavoro3](https://user-images.githubusercontent.com/31849300/36934492-f5e2988c-1eea-11e8-9704-38855d681cac.PNG)
 ![lavoro4](https://user-images.githubusercontent.com/31849300/36934493-f6001da8-1eea-11e8-8e14-57d5ba9d78a0.PNG)
