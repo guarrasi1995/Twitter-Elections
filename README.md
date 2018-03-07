@@ -381,14 +381,14 @@ For each theme, we choose the most viral tweets, from the point of view of favor
 
 - Centro Destra from Matteo Salvini : "Altri pensano al passato, io preparo il futuro! domenicavotoLega"
 
-![lavoro5](https://user-images.githubusercontent.com/31849300/36934494-f61d8460-1eea-11e8-9b55-e98245868600.PNG)
-![lavoro6](https://user-images.githubusercontent.com/31849300/36934495-f63b84ce-1eea-11e8-925c-1cacf3e3dcf2.PNG)
+![eurooo](https://user-images.githubusercontent.com/31849300/37098844-35c80978-221f-11e8-91e7-27e5a9de4cf1.PNG)
+![eurooo2](https://user-images.githubusercontent.com/31849300/37098848-3638b164-221f-11e8-95b1-c3e89ec59934.PNG)
 
 - LeU from Laura Boldrini : "#Salvini si sente europeista solo il 27 del mese, quando gli arriva il suo lauto stipendio da #Bruxelles @radioanchio "
 
 - Centro Sinistra from Matteo Renzi : "Bravo Sandro, ottimo lavoro. Essere più credibili in Europa passa da rispettare le regole che ci sono. E da cambiar…"
 
-- Centro Destra from Silvio Berlusconi : "Lattuale Presidente del Parlamento Europeo, il nostro amico @Antonio_Tajani, ha finalmente sciolto la riserva sul… "
+- Centro Destra from Matteo Salvini : "Salvini: differenza non è tra fascisti e comunisti, ma tra chi fa gli interessi degli ITALIANI e quelli che fanno gli interessi dell'Europa e dei banchieri. #dallavostraparte "
 
 ![neros](https://user-images.githubusercontent.com/31849300/37097446-c29d14e6-221b-11e8-92e4-b8fcddf55192.PNG)
 ![finale2](https://user-images.githubusercontent.com/31849300/37066171-5ae9846e-21a4-11e8-8d99-a9d68d785d38.PNG)
