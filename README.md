@@ -255,7 +255,7 @@ On the x axis we have the number of hours passed and on the y axis the number of
 
 For the third type, we represent the same type of plot of the second type, but here we predict the tweet for each party with more favorites or with more retweets.
 
-# ![tacci](https://user-images.githubusercontent.com/31849300/37065112-da2397ba-219f-11e8-9059-22e2e5855c51.PNG)
+# ![serte](https://user-images.githubusercontent.com/31849300/37066015-b66c6352-21a3-11e8-8d5b-029584a65fa3.PNG)
 The tweets extracted are:
 
 - LeU from Laura Boldrini : "#Salvini si sente europeista solo il 27 del mese, quando gli arriva il suo lauto stipendio da #Bruxelles @radioanchio "
@@ -391,8 +391,8 @@ Un solo giorno per votare, poche ore per f…"
 
 - Centro Destra from Silvio Berlusconi : "Lattuale Presidente del Parlamento Europeo, il nostro amico @Antonio_Tajani, ha finalmente sciolto la riserva sul… "
 
-![lavoro7](https://user-images.githubusercontent.com/31849300/36934496-f664bc18-1eea-11e8-8dd7-27ec6262f820.PNG)
-![lavoro8](https://user-images.githubusercontent.com/31849300/36934497-f6814dce-1eea-11e8-80cd-26abd6d423d3.PNG)
+![finale1](https://user-images.githubusercontent.com/31849300/37066172-5b0ab2ec-21a4-11e8-947c-6e39b5d979a3.PNG)
+![finale2](https://user-images.githubusercontent.com/31849300/37066171-5ae9846e-21a4-11e8-8d99-a9d68d785d38.PNG)
 
 - LeU from Laura Boldrini : "A 25 mesi dal sequestro di #GiulioRegeni continuiamo a sostenere con forza la richiesta di tanti cittadini italiani…"
 
@@ -400,7 +400,7 @@ Un solo giorno per votare, poche ore per f…"
 
 - Centro Sinistra from Paolo Gentiloni : "Grazie a tutti i volontari che in queste ore aiutano le persone bisognose a proteggersi dal freddo @CaritasItaliana  @santegidionews"
 
-- Centro Destra from Silvio Berlusconi : "Se i Cinque Stelle prendessero il potere lItalia cadrebbe in una crisi rovinosa, fuggirebbero allestero le impres… "
+- Centro Destra from Matteo Salvini : "Accoglienza spettacolare al seggio!Dai, dai, dai! Meno di 5 ore per votare LEGA e finalmente riprenderci questo Paese! #primagliitaliani #oggivotoLega "
 
 
 Grazie a tutti i volontari che in queste ore aiutano le persone bisognose a proteggersi dal freddo @CaritasItaliana  @santegidionews 
