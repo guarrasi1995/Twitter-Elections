@@ -390,7 +390,7 @@ For each theme, we choose the most viral tweets, from the point of view of favor
 
 - Centro Destra from Silvio Berlusconi : "Lattuale Presidente del Parlamento Europeo, il nostro amico @Antonio_Tajani, ha finalmente sciolto la riserva sul… "
 
-![finale1](https://user-images.githubusercontent.com/31849300/37066172-5b0ab2ec-21a4-11e8-947c-6e39b5d979a3.PNG)
+![neros](https://user-images.githubusercontent.com/31849300/37097446-c29d14e6-221b-11e8-92e4-b8fcddf55192.PNG)
 ![finale2](https://user-images.githubusercontent.com/31849300/37066171-5ae9846e-21a4-11e8-8d99-a9d68d785d38.PNG)
 
 - LeU from Laura Boldrini : "A 25 mesi dal sequestro di #GiulioRegeni continuiamo a sostenere con forza la richiesta di tanti cittadini italiani…"
@@ -399,17 +399,13 @@ For each theme, we choose the most viral tweets, from the point of view of favor
 
 - Centro Sinistra from Paolo Gentiloni : "Grazie a tutti i volontari che in queste ore aiutano le persone bisognose a proteggersi dal freddo @CaritasItaliana  @santegidionews"
 
-- Centro Destra from Matteo Salvini : "Accoglienza spettacolare al seggio!Dai, dai, dai! Meno di 5 ore per votare LEGA e finalmente riprenderci questo Paese! #primagliitaliani #oggivotoLega "
+- Centro Destra from Matteo Salvini : "SIAMO IN ITALIA E NON POSSO DIRE "PRIMA GLI ITALIANI"????? Cosa devo dire? "Prima i marziani"?? #dallavostraparte "
 
 
-Grazie a tutti i volontari che in queste ore aiutano le persone bisognose a proteggersi dal freddo @CaritasItaliana  @santegidionews 
+![immigrati1](https://user-images.githubusercontent.com/31849300/37098275-cf38b3d4-221d-11e8-8794-0766a3b60b62.PNG)
+![immi2](https://user-images.githubusercontent.com/31849300/37098276-cf5c0550-221d-11e8-97fc-cb0cc5b29d7b.PNG)
 
-Se i Cinque Stelle prendessero il potere lItalia cadrebbe in una crisi rovinosa, fuggirebbero allestero le impres… https://t.co/R94YcysVX1 
-
-![lavoro9](https://user-images.githubusercontent.com/31849300/36934498-f6a0d310-1eea-11e8-80f2-ad96d1abb64d.PNG)
-![lavoro10](https://user-images.githubusercontent.com/31849300/36934499-f6bf723e-1eea-11e8-8ee9-8f9b0fe9d59e.PNG)
-
-- Centro Destra from Silvio Berlusconi : "Gli immigrati clandestini sono arrivati perché i governi di sinistra non sono stati capaci di fermarli, non per il… " 
+- Centro Destra from Matteo Salvini: "Salvini: Il mio obiettivo è avere MENO SBARCHI e più ESPULSIONI. Questo significa avere più SICUREZZA. Ogni giorno 700 reati commessi da stranieri, lavorerò per ridurre questo numero. #dallavostraparte" 
 
 To conclude, we note that all parties receive more attention (Favorites and Retweets) when they offend and criticize their rivals rather than in exposing their ideas and innovations. In general, hatred and insult are the primary tools for the dissemination of their tweets.
 
