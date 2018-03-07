@@ -363,7 +363,7 @@ For each party we have chosen as reference point the 3 major exponents:
 
 For each theme, we choose the most viral tweets, from the point of view of favorites and retweets, showing their performance over a 48 hour period.
 
-![faiora](https://user-images.githubusercontent.com/31849300/37095913-79d50830-2217-11e8-855e-33ad65b165fc.PNG)
+![faiora](https://user-images.githubusercontent.com/31849300/37096046-d4edfa06-2217-11e8-81d6-6ef6ff0ba784.PNG)
 ![lavoro2](https://user-images.githubusercontent.com/31849300/36934501-f7b0d458-1eea-11e8-8d65-f7c85235f01c.PNG)
 
 - LeU from Pietro Grasso: "La disoccupazione è risalita all 11,1%. Lavoro, lavoro, lavoro: è il pensiero fisso di tutti gli italiani e il pens…"
@@ -372,15 +372,14 @@ For each theme, we choose the most viral tweets, from the point of view of favor
 
 - Centro Destra from Matteo Salvini : "Se tieni sul lavoro fino a 67 anni uomini e donne, come fai ad introdurre nel mondo del lavoro i giovani? Cancellare L.Fornero è azione di giustizia sociale, non è solo un pallino di Salvini. bersagliomobile "
 
-![lavoro3](https://user-images.githubusercontent.com/31849300/36934492-f5e2988c-1eea-11e8-9704-38855d681cac.PNG)
-![lavoro4](https://user-images.githubusercontent.com/31849300/36934493-f6001da8-1eea-11e8-8e14-57d5ba9d78a0.PNG)
+![futurooo](https://user-images.githubusercontent.com/31849300/37096452-ef09ba8c-2218-11e8-8ce6-d54c55b8d8d9.PNG)
+![nonono](https://user-images.githubusercontent.com/31849300/37096741-effe3d0e-2219-11e8-8d02-aa882b60199f.PNG)
 
 - LeU from Pietro Grasso :"Per @liberi_uguali scuola, università e ricerca sono centrali per il futuro del Paese. Sono felice che già più di 1…"
 
 - M5S from Alessandro Di Battista : "Ci vediamo alle 18.00 in piazza a Città di Castello! #FuturoInProgramma "
 
-- Centro Destra from Silvio Berlusconi : "Domenica 4 marzo saremo chiamati a decidere il futuro del nostro Paese. 
-Un solo giorno per votare, poche ore per f…"
+- Centro Destra from Matteo Salvini : "Altri pensano al passato, io preparo il futuro! domenicavotoLega"
 
 ![lavoro5](https://user-images.githubusercontent.com/31849300/36934494-f61d8460-1eea-11e8-9b55-e98245868600.PNG)
 ![lavoro6](https://user-images.githubusercontent.com/31849300/36934495-f63b84ce-1eea-11e8-925c-1cacf3e3dcf2.PNG)
