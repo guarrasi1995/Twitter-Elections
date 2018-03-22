@@ -192,7 +192,7 @@ From the data collection, the number of reference profiles for each party are:
 As we can see, Centro Sinistra and Centro Destra, being the largest parties, have a total of 73% of the pages considered.
 In the 8 days before the elections we have collected a total of ___ tweets. Here we can see how they are distributed among the various parties:
 # ![media7](https://user-images.githubusercontent.com/31849300/36934241-ec6ceb58-1ee6-11e8-9c90-77f50ffaeca7.PNG)
-We can see that the party that is most active on the social network is ___ , although it is not the one with the largest number of reference profiles.
+We can see that the party that is most active on the social network is Centro Destra, although it is not the one with the largest number of reference profiles.
 
 ## Plots
 In this part we want to exploit the collected data to make statistical analyzes on the growth of favorites and retweets over a period of 48 hours. So we decided to represent 3 types of plots:
@@ -277,7 +277,7 @@ The tweets extracted are:
 - Centro Destra from Alfio Krancic : "I due picciotti di Palermo fermati per aver sequestrato, incaprettato e massacrato il segretario di FN, sono stati… "
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
-We can see that  ___ is the party that has the tweet that is the most successful for the favorites and ___ is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
+We can see that  M%S is the party that has the tweet that is the most successful for the favorites and it is also is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
 
 For the fourth type, we wanted to show how many tweets each party got published every day. We would like to see if the parties followed the same strategy on the amount of tweets to be published in the days around the elections.
 
