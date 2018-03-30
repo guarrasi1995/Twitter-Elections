@@ -364,7 +364,7 @@ For each party we have chosen as reference point the 3 major exponents:
 For each theme, we choose the most viral tweets, from the point of view of favorites and retweets, showing their performance over a 48 hour period.
 
 ![faiora](https://user-images.githubusercontent.com/31849300/37096046-d4edfa06-2217-11e8-81d6-6ef6ff0ba784.PNG)
-![lavoro2](https://user-images.githubusercontent.com/31849300/36934501-f7b0d458-1eea-11e8-8d65-f7c85235f01c.PNG)
+![gentiloni_work_2](https://user-images.githubusercontent.com/31849300/38155577-cd550dc0-3478-11e8-9170-69ebbdeba290.PNG)
 
 - LeU from Pietro Grasso: "La disoccupazione è risalita all 11,1%. Lavoro, lavoro, lavoro: è il pensiero fisso di tutti gli italiani e il pens…"
 
@@ -391,7 +391,7 @@ For each theme, we choose the most viral tweets, from the point of view of favor
 - Centro Destra from Matteo Salvini : "Salvini: differenza non è tra fascisti e comunisti, ma tra chi fa gli interessi degli ITALIANI e quelli che fanno gli interessi dell'Europa e dei banchieri. #dallavostraparte "
 
 ![neros](https://user-images.githubusercontent.com/31849300/37097446-c29d14e6-221b-11e8-92e4-b8fcddf55192.PNG)
-![finale2](https://user-images.githubusercontent.com/31849300/37066171-5ae9846e-21a4-11e8-8d99-a9d68d785d38.PNG)
+![italia2](https://user-images.githubusercontent.com/31849300/38155620-0b9fea82-3479-11e8-9cff-42204d154db4.PNG)
 
 - LeU from Laura Boldrini : "A 25 mesi dal sequestro di #GiulioRegeni continuiamo a sostenere con forza la richiesta di tanti cittadini italiani…"
 
