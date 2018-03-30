@@ -190,9 +190,11 @@ From the data collection, the number of reference profiles for each party are:
 ![media8](https://user-images.githubusercontent.com/31849300/36934242-ec8a8aa0-1ee6-11e8-92d8-92c0b9f272ac.PNG)
 
 As we can see, Centro Sinistra and Centro Destra, being the largest parties, have a total of 73% of the pages considered.
-In the 8 days before the elections we have collected a total of ___ tweets. Here we can see how they are distributed among the various parties:
-# ![media7](https://user-images.githubusercontent.com/31849300/36934241-ec6ceb58-1ee6-11e8-9c90-77f50ffaeca7.PNG)
-We can see that the party that is most active on the social network is Centro Destra, although it is not the one with the largest number of reference profiles.
+In the 8 days before the elections we have collected a total of 9355 tweets. Here we can see how they are distributed among the various parties:
+
+![torta tweet](https://user-images.githubusercontent.com/31849300/38155879-811e527a-347a-11e8-8049-7d96c4148743.PNG)
+
+We can see that the party that is most active on the social network is Centro Sinistra, which it's the one with the largest number of reference profiles.
 
 ## Plots
 In this part we want to exploit the collected data to make statistical analyzes on the growth of favorites and retweets over a period of 48 hours. So we decided to represent 3 types of plots:
@@ -204,8 +206,8 @@ In this part we want to exploit the collected data to make statistical analyzes 
 
 For the first type, for each party we collected favorites and retweets for every hour saving them in a dictionary with key = the relative hour and for value = the list of number of favorites or retweets at that hour. Then we made a mean of these lists and then plotted them:
 
-![media1](https://user-images.githubusercontent.com/31849300/36934253-ef1c01a4-1ee6-11e8-95a7-06d2118a590d.PNG)
-![media2](https://user-images.githubusercontent.com/31849300/36934236-ebc51d2e-1ee6-11e8-9372-da3192647c80.PNG)
+![media mi piace 1](https://user-images.githubusercontent.com/31849300/38155779-d6155c0c-3479-11e8-9637-339d47af6a24.PNG)
+![media retweets 2](https://user-images.githubusercontent.com/31849300/38155781-d9a811a2-3479-11e8-8410-4e810dffd3fd.PNG)
 
 On the x axis we have the number of hours passed and on the y axis the average number of favorites reached or retweets achieved.
 
@@ -413,4 +415,4 @@ Twitter analysis has strengths and weaknesses. Twitter users are not representat
 motivated, younger than average and are likely more often men when engaged in political debate. So any insights are partial. That said, Twitter can be a reflection of spontaneous, motivated behaviour. Analysing Twitter narratives helps us to see where those
 highly motivated individuals position themselves in relation to the debate.
 
-Authours: Valerio Guarrasi and Davide Aureli
+### Authours: Valerio Guarrasi and Davide Aureli
