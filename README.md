@@ -257,7 +257,7 @@ On the x axis we have the number of hours passed and on the y axis the number of
 
 For the third type, we represent the same type of plot of the second type, but here we predict the tweet for each party with more favorites or with more retweets.
 
-# ![serte](https://user-images.githubusercontent.com/31849300/37066015-b66c6352-21a3-11e8-8d5b-029584a65fa3.PNG)
+# ![finale_most_fav](https://user-images.githubusercontent.com/31849300/38178736-2ca61278-3619-11e8-99cb-d906b82d5b8f.PNG)
 The tweets extracted are:
 
 - LeU from Laura Boldrini : "#Salvini si sente europeista solo il 27 del mese, quando gli arriva il suo lauto stipendio da #Bruxelles @radioanchio "
