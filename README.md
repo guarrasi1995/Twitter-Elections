@@ -268,7 +268,7 @@ The tweets extracted are:
 
 - Centro Destra from Matteo Salvini : "#Renzi si è dimesso, GRAZIE Italia!Vi voglio bene Amici."
 
-# ![media6](https://user-images.githubusercontent.com/31849300/36934240-ec508d96-1ee6-11e8-9a6c-82a232df87fd.PNG)
+# ![most_retweeted](https://user-images.githubusercontent.com/31849300/38178934-079584ec-361d-11e8-9a50-74fdd5f4ddf0.PNG)
 The tweets extracted are:
 - LeU from Laura Boldrini : "@matteosalvinimi @mattino5 Ci risiamo.Mi aiutate a spiegarlo con calma a Salvini? Il Presidente del Consiglio non g… "
 
@@ -276,7 +276,7 @@ The tweets extracted are:
 
 - Centro Sinistra from Paolo Gentiloni : "#Istat Più crescita, meno deficit, più occupati, cala anche il debito pubblico. La politica dei nostri governi dà b… "
 
-- Centro Destra from Alfio Krancic : "I due picciotti di Palermo fermati per aver sequestrato, incaprettato e massacrato il segretario di FN, sono stati… "
+- Centro Destra from Matteo Salvini : "#Renzi si è dimesso, GRAZIE Italia!Vi voglio bene Amici."
 
 On the x axis we have the number of hours passed and on the y axis the number of favorites reached or retweets achieved.
 We can see that  M%S is the party that has the tweet that is the most successful for the favorites and it is also is the party that has the tweet that is the most successful for retweets. Observing the most clicked tweets, however, you can not deduce anything concrete even if (or since) before M5S was the party that media would have won the election. But we can see that, for all the parties, the tweet that has the most favorites is also the tweet with the most retweets. So we can say that as the favorites grow, also the retweets grow.
